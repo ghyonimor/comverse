@@ -173,7 +173,7 @@
 }
 
 [am-success] [am-caption] {
-	position:relative;
+	position:absolute;
 	background:#3AA6DB;
 	color:white;
 	z-index: 10;
@@ -200,6 +200,7 @@
 	height:170px;
 	padding: 20px;
 	margin:0;
+	position:relative;
 }
 
 [am-success]:hover [am-caption~="medium"] {
