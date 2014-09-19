@@ -1,249 +1,545 @@
 <!doctype html>
-
+	
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Dev Shots</title>
-	<head>
-	<body lang="he" dir="rtl">
-		<header id="header"> <!--Header includes logo/headline row section and banner section, background will be in css for entire header-->
-			<section id="logoRow"> <!--Logo/headline row section-->
-				<h1><strong>DEV SHOTS</strong> אירוע המפתחים</h1>
-				<a href="#header"> <!-- Logo is a link to homepage -->
-					<img src="netcraftLogo.png" alt="Netcraft logo">
-				</a>
-			</section>
-			
-			<section id="banner"> <!--Banner section, includes navigation menu-->
-				<div class="wrapper"> <!--Banner texts wrapper-->
-					<h2>אירוע פיתוח בראש טוב</h2>
-					<p>לדבר על טכנולוגיות מהחזית ואתגרים שווים עם גיבורי יום יום כמוכם</p>
-				</div>
-				<nav id="headerNavigation"> <!--Header navigation menu-->
-					<h3>ניווט</h3>
-					<ul>
-						<li>
-							<a href="#header">מה זה?</a>
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<title>Comverse Homepage</title>
+	</head>
+	
+	<!--am-layoutWrap="x" elements are to determine specific layout width. -->
+	
+	<body>
+		<header> <!--Header contains logo, main dropdown navigation, site search, language menu and customer login.-->
+			<div am-layoutWrap="header"> <!--A layout width container.-->
+			<a href="" am-logo><img src="images/logo.png" alt="Comverse logo"></a>
+			<div am-wrapNavAndSearch>
+				<nav am-nav="main"> <!--Main dropdown navigation.-->
+					<ul> 
+						<li><a href="">YOUR NEEDS</a>
+							<div am-dropdown>
+								<div>
+									<ul>
+										<li><a href="">Smart Monetization</a></li>
+										<li><a href="">Digital Customer Experience</a></li>
+										<li><a href="">Personalized Choice & Control</a></li>
+										<li><a href="">Optimization and Efficiency</a></li>
+									</ul>
+									<ul>
+										<li><a href="">Business Transformation</a></li>
+										<li><a href="">Business Enablement & Growth</a></li>
+										<li><a href="">Business Stimulating Analytics</a></li>
+										<li><a href="">Customer Evolution</a></li>
+									</ul>
+								</div>
+								<div>
+									<a href=""><img src="images/dropdown1.jpg" alt="dropdown image"></a>
+								</div>
+							</div>
 						</li>
-						<li>
-							<a href="#lectures">ההרצאות</a>
+						<li><a href="">OUR PORTFOLIO</a>
+							<div am-dropdown>
+								<div>
+									<ul>
+										<li><a href="" am-nav="dropdown headline">BBS - Business Support Systems</a></li>
+										<li><a href="">Converged BBS</a></li>
+										<li><a href="">Active Customer Management</a></li>
+										<li><a href="">Online & Converged Charging</a></li>
+										<li><a href="">Actionable Intelligence</a></li>
+										<li><a href="">Social Media Gateway</a></li>
+										<li><a href="">Mediation & Settlements</a></li>
+										<li><a href="">Prepaid Billing</a></li>
+										<li><a href="">Comverse Kenan</a></li>
+										<li><a href="" am-nav="dropdown headline">Policy</a></li>
+										<li><a href="">Policy Management</a></li>
+										<li><a href="">Policy Enforcements</a></li>
+									</ul>
+									<ul>
+										<li><a href="" am-nav="dropdown headline">Digital Services</a></li>
+										<li><a href="">Evolved Communication Suite</a></li>
+										<li><a href="">Value Added Services</a></li>
+										<li><a href="">Enterprise IP Communications</a></li>
+										<li><a href="">Cloud Offering</a></li>
+										<li><a href="" am-nav="dropdown headline">Services</a></li>
+										<li><a href="">Managed Services</a></li>
+										<li><a href="">Learning & Certification Services</a></li>
+									</ul>
+								</div>
+								<div>
+									<a href=""><img src="images/dropdown2.jpg" alt="dropdown image"></a>
+								</div>
+							</div>
 						</li>
-						<li>
-							<a href="#address">איפה חניה?</a>
+						<li><a href="">NEWS & MEDIA</a>
+							<div am-dropdown>
+								<div>
+									<ul>
+										<li><a href="">Press Releases</a></li>
+										<li><a href="">Events</a></li>
+										<li><a href="">In the News</a></li>
+										<li><a href="">Success Stories</a></li>
+									</ul>
+									<ul>
+										<li><a href="">Awards</a></li>
+										<li><a href="">Multimedia & Webinars</a></li>
+										<li><a href="">Newsletter</a></li>
+										<li><a href="">Articles and Papers</a></li>
+									</ul>
+								</div>
+								<div>
+									<a href=""><img src="images/dropdown3.jpg" alt="dropdown image"></a>
+								</div>
+							</div>
 						</li>
-						<li>
-							<a href="#signup">הרשמה</a>
-						</li>
-						<li>
-							<a href="#info">מידע שימושי</a>
-						</li>
-						<li>
-							<a href="#about">עלינו</a>
-						</li>
+						<li><a href="">ABOUT COMVERSE</a>
+							<div am-dropdown>
+								<div>
+									<ul>
+										<li><a href="">Overview</a></li>
+										<li><a href="">Management</a></li>
+										<li><a href="">Investors</a></li>
+										<li><a href="">Contact us</a></li>
+										<li><a href="">Careers</a></li>
+									</ul>
+									<ul>
+										<li><a href="">Partners</a></li>
+										<li><a href="">Customers</a></li>
+										<li><a href="">Values & Corporate Responsibility</a></li>
+										<li><a href="">Industry Involvement</a></li>
+									</ul>
+								</div>
+								<div>
+									<a href=""><img src="images/dropdown4.jpg" alt="dropdown image"></a>
+								</div>
+							</div>
+						</li>		
 					</ul>
 				</nav>
-			</section>
+				<div am-inputSubmit="search"> <!--Site search-->
+					<input am-input="search" type="text" placeholder="">
+					<button am-submit="search"><i class="fa fa-search"></i></button>
+				</div>
+			</div>
+			<div am-wrapLangLogin>
+				<nav am-lang> <!--Language navigation-->
+					<select>
+						<option value="EN">EN</option>
+						<option value="HE">HE</option>
+						<option value="FR">FR</option>
+						<option value="RU">RU</option>
+					</select>
+				</nav>
+				<a href="" am-login>Customer login</a> <!--customer login-->
+			</div>
 		</header>
 		
-		<div id="content"> <!--Main content of site-->
-			<section id="lectures"> <!--Lecture section-->
-				<div class="wrapper">
-					<h2>6 הרצאות מרתקות וקצרות</h2>
-					<p><i class="fa fa-clock-o"></i> <!--FontAwesome is awesome-->15 דקות לכל הרצאה</p>
-				</div>
-				<ul id="lecturers">
-					<li>
-						<img src="person1.png" alt="person1">
-						<blockquote>
-							<h3>חומריות בעולם הדיגיטלי</h3>
-							<cite>רן לירון</cite>
-						</blockquote>
-						<p>ההרצאה תסקור את הרגלי השימוש, הממשקים שעובדים, תשתף בסיפורים אנושיים מעניינים ובעיקר תשנה את הדרך שבה אתם חושבים על הגיל השלישי.</p>
-						<p>ההרצאה מבוססת על מחקר וסדרה של תצפיות משתמשים בארץ במגוון קורסי אינטרנט לגיל השלישי. ההרצאה מבוססת על מחקר ההרצאה תסקור את הרגלי השימוש</p>
-					</li>
-					<li>
-						<img src="person2.png" alt="person2">
-						<blockquote>
-							<h3>חומריות בעולם הדיגיטלי</h3>
-							<cite>רן לירון</cite>
-						</blockquote>
-						<p>ההרצאה תסקור את הרגלי השימוש, הממשקים שעובדים, תשתף בסיפורים אנושיים מעניינים ובעיקר תשנה את הדרך שבה אתם חושבים על הגיל השלישי.</p>
-						<p>ההרצאה מבוססת על מחקר וסדרה של תצפיות משתמשים בארץ במגוון קורסי אינטרנט לגיל השלישי. ההרצאה מבוססת על מחקר ההרצאה תסקור את הרגלי השימוש</p>
-					</li>
-					<li>
-						<img src="person3.png" alt="person3">
-						<blockquote>
-							<h3>חומריות בעולם הדיגיטלי</h3>
-							<cite>רן לירון</cite>
-						</blockquote>
-						<p>ההרצאה תסקור את הרגלי השימוש, הממשקים שעובדים, תשתף בסיפורים אנושיים מעניינים ובעיקר תשנה את הדרך שבה אתם חושבים על הגיל השלישי.</p>
-						<p>ההרצאה מבוססת על מחקר וסדרה של תצפיות משתמשים בארץ במגוון קורסי אינטרנט לגיל השלישי. ההרצאה מבוססת על מחקר ההרצאה תסקור את הרגלי השימוש</p>
-					</li>
-					<li>
-						<img src="person4.png" alt="person4">
-						<blockquote>
-							<h3>חומריות בעולם הדיגיטלי</h3>
-							<cite>רן לירון</cite>
-						</blockquote>
-						<p>ההרצאה תסקור את הרגלי השימוש, הממשקים שעובדים, תשתף בסיפורים אנושיים מעניינים ובעיקר תשנה את הדרך שבה אתם חושבים על הגיל השלישי.</p>
-						<p>ההרצאה מבוססת על מחקר וסדרה של תצפיות משתמשים בארץ במגוון קורסי אינטרנט לגיל השלישי. ההרצאה מבוססת על מחקר ההרצאה תסקור את הרגלי השימוש</p>
-					</li>
-					<li>
-						<img src="person5.png" alt="person5">
-						<blockquote>
-							<h3>חומריות בעולם הדיגיטלי</h3>
-							<cite>רן לירון</cite>
-						</blockquote>
-						<p>ההרצאה תסקור את הרגלי השימוש, הממשקים שעובדים, תשתף בסיפורים אנושיים מעניינים ובעיקר תשנה את הדרך שבה אתם חושבים על הגיל השלישי.</p>
-						<p>ההרצאה מבוססת על מחקר וסדרה של תצפיות משתמשים בארץ במגוון קורסי אינטרנט לגיל השלישי. ההרצאה מבוססת על מחקר ההרצאה תסקור את הרגלי השימוש</p>
-					</li>
-					<li>
-						<img src="person6.png" alt="person6">
-						<blockquote>
-							<h3>חומריות בעולם הדיגיטלי</h3>
-							<cite>רן לירון</cite>
-						</blockquote>
-						<p>ההרצאה תסקור את הרגלי השימוש, הממשקים שעובדים, תשתף בסיפורים אנושיים מעניינים ובעיקר תשנה את הדרך שבה אתם חושבים על הגיל השלישי.</p>
-						<p>ההרצאה מבוססת על מחקר וסדרה של תצפיות משתמשים בארץ במגוון קורסי אינטרנט לגיל השלישי. ההרצאה מבוססת על מחקר ההרצאה תסקור את הרגלי השימוש</p>
-					</li>
-				</ul>
-				<img id="robot" src="robot.png" alt="robot">
-			</section>
-			
-			<section id="address"> <!--Adress section, includes all details inside a wrapper div and a google map+resize inside another wrapper div-->
-				<div class="wrapper">
-					<h2>אז איפה שמים את האוטו? <small> ועוד כמה פרטים חשובים...</small></h2>
-					<h3>הערב יערך במועדון הסאבליים</h3>
-					<p>דרך שלמה 53, תל אביב</p>
-					<p>
-						<small>מתכנסים בשעה:</small>
-						<time> 18:30</time>
-						<small> מתחילים בשעה:</small>
-						<time> 19:00</time>
-					</p>
-					<h3>חניה</h3>
-					<ol>
-						<li>חניון אלי פלט</li>
-						<li>רחוב אלפסי</li>
-						<li>רחוב חיים בן עטר</li>
-					</ol>
-					<h3>אוטובוסים</h3>
-					<ol>
-						<li>רכבת מרכז - 142, 42</li>
-						<li>תחנה מרכזית - 163, 201, 96</li>
-					</ol>
-				</div>
-				<div class="wrapper">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.5274797609122!2d34.76709240000002!3d32.05497910000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4ca272a0148b%3A0xbdebc2472e1bc72b!2z15PXqNeaINep15zXnteUIDUzLCDXqtecINeQ15HXmdeRINeZ16TXlQ!5e0!3m2!1siw!2sil!4v1409327019725" width="600" height="450" frameborder="0" style="border:0"></iframe>
-					<a href="https://www.google.co.il/maps/place/%D7%93%D7%A8%D7%9A+%D7%A9%D7%9C%D7%9E%D7%94+53,+%D7%AA%D7%9C+%D7%90%D7%91%D7%99%D7%91+%D7%99%D7%A4%D7%95%E2%80%AD/@32.0549791,34.7670924,17z/data=!3m1!4b1!4m2!3m1!1s0x151d4ca272a0148b:0xbdebc2472e1bc72b"><small><i class="fa fa-search"></i> למפה המלאה</small></a>
-				</div>
-			</section>
-			
-			<section id="signup"> <!--Sign up section, robot image will be embed in the background css-->
-				<h2>הרשמה</h2>
-				<h3>הכניסה היא חינם אבל מספר המקומות מצומצם.</h3>
-				<p><small>נשמח אם תרשמו רק את אתם באמת מתכוונים להגיע - כדי שלא נסרב למישהו אחר.</small></p>
-				<p><small>כל הפרטים האישיים יישארו חסויים ואנחנו לא נעביר אותם לאף אחד.</small></p>
-				<form action="form.php"> <!--The form-->
-					<fieldset>
-						<label for="name">שם מלא</label>
-						<input type="text" id="name" placeholder="פרטי וגם משפחה">
-					</fieldset>
-					<fieldset>
-						<label for="position">תפקיד</label>
-						<input type="text" id="position" placeholder="מה אתם עושים ביום יום">
-					</fieldset>
-					<fieldset>
-						<label for="organization">ארגון</label>
-						<input type="text" id="organization" placeholder="מי משלם לכם משכורת">
-					</fieldset>
-					<fieldset>
-						<label for="phone">מספר טלפון</label>
-						<input type="tel" id="phone" placeholder="או סלולרי, לנו לא אכפת">
-					</fieldset>
-					<fieldset>
-						<label for="friends">חברים</label>
-						<input type="text" id="friends" placeholder="יש לי מלא, אבל אני בא לבד">
-					</fieldset>
-					<input type="submit" value="זהו! שלח אותי">
-				</form>
-			</section>
+		<div am-main> <!--Wraps all sections except header and footer-->
+			<section am-slider> <!--Slider section-->
+				<div am-layoutWrap="main slider"> <!--Slider section content wrap-->
+					<div am-wrapSlideContent="1"> <!--Wraps slider headline, paragraph, CTA and bullets. Each slide is marked by a number.-->
+						<h1 am-sliderHeadline>DIGITAL SERVICES</h1>
+						<a am-blueButton href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
+						<ol am-sliderBullets>
+							<li am-marked><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+						</ol>
+					</div>
 					
-			<section id="info"> <!--Information section, includes 10 photo icons and description, as well as headline and a photo-->
-				<h2>מידע שימושי<h2>
-				<ul>
-					<li>
-						<img src="photoIcon1.png" alt="photoIcon1">
-						<h3>קורס HTML5</h3>
-						<p><small>אספנו בשבילכם את רשימת הספרים שכדאי שתקראו לפני שאתם מתחילים</small></p>
-					</li>
-					<li>
-						<img src="photoIcon2.png" alt="photoIcon2">
-						<h3>לומדים חווית משתמש</h3>
-						<p><small>אתר NETCRAFTACADEMY ללימוד חווית משתמש</small></p>
-					</li>
-					<li>
-						<img src="photoIcon3.png" alt="photoIcon3">
-						<h3>בלוג נטקראפט</h3>
-						<p><small>בלוג של אנשי נטקראפט על שימושיות, עיצוב, טכנולוגיה וכל הדברים המעניינים באמת</small></p>
-					</li>
-					<li>
-						<img src="photoIcon4.png" alt="photoIcon4">
-						<h3>הספרים שכדאי לקרוא</h3>
-						<p><small>אספנו בשבילכם את רשימת הספרים שכדאי שתקראו לפני שאתם מתחילים</small></p>
-					</li>
-					<li>
-						<img src="photoIcon5.png" alt="photoIcon5">
-						<h3>הספרים שכדאי לקרוא</h3>
-						<p><small>אספנו בשבילכם את רשימת הספרים שכדאי שתקראו לפני שאתם מתחילים</small></p>
-					</li>
-					<li>
-						<img src="photoIcon6.png" alt="photoIcon6">
-						<h3>הספרים שכדאי לקרוא</h3>
-						<p><small>אספנו בשבילכם את רשימת הספרים שכדאי שתקראו לפני שאתם מתחילים</small></p>
-					</li>
-					<li>
-						<img src="photoIcon7.png" alt="photoIcon7">
-						<h3>הספרים שכדאי לקרוא</h3>
-						<p><small>אספנו בשבילכם את רשימת הספרים שכדאי שתקראו לפני שאתם מתחילים</small></p>
-					</li>
-					<li>
-						<img src="photoIcon8.png" alt="photoIcon8">
-						<h3>הספרים שכדאי לקרוא</h3>
-						<p><small>אספנו בשבילכם את רשימת הספרים שכדאי שתקראו לפני שאתם מתחילים</small></p>
-					</li>
-					<li>
-						<img src="photoIcon9.png" alt="photoIcon9">
-						<h3>הספרים שכדאי לקרוא</h3>
-						<p><small>אספנו בשבילכם את רשימת הספרים שכדאי שתקראו לפני שאתם מתחיליפ</small></p>
-					</li>
-					<li>
-						<img src="photoIcon10.png" alt="photoIcon10">
-						<h3>הספרים שכדאי לקרוא</h3>
-						<p><small>אספנו בשבילכם את רשימת הספרים שכדאי שתקראו לפני שאתם מתחילים</small></p>
-					</li>
-				</ul>
-				<img src="octobot.png" alt="octobot">
+					<!-- Slides' 2-5 headline boxes are commented out at this point.-->
+					<!--
+					<div am-wrapSlideContent="2"> 
+						<h1 am-sliderHeadline>CREATE A SUPERIOR CUSTOMER EXPERIENCE</h1>
+						<ul am-sliderParagraph>
+							<li>Personalized Plans and Offerings, Smart Customer Interactions</li>
+							<li>Comprehensive Self-Service and Account Control</li>
+							<li>Personalized Social Media Interactions and more</li>
+						</ul>
+						<a am-blueButton href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
+						<ol am-sliderBullets>
+							<li><a href="">1</a></li>
+							<li am-marked><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+						</ol>
+					</div>
+					
+					<div am-wrapSlideContent="3">
+						<h1 am-sliderHeadline>Evolve to IP/4G</h1>
+						<ul am-sliderParagraph>
+							<li>3G/4G Service Evolution</li>
+							<li>Rich Communication Services (RCS)</li>
+							<li>Service and Device-Aware Charging</li>
+						</ul>
+						<a am-blueButton href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
+						<ol am-sliderBullets>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li am-marked><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+						</ol>
+					</div>
+					
+					<div am-wrapSlideContent="4">
+						<h1 am-sliderHeadline>Smartly Monetize New Business Models</h1>
+						<ul am-sliderParagraph>
+							<li>Smart Data Monetization & Analytics</li>
+							<li>M2M & Cloud</li>
+							<li>Customer Aware Policy</li>
+						</ul>
+						<a am-blueButton href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
+						<ol am-sliderBullets>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li am-marked><a href="">4</a></li>
+							<li><a href="">5</a></li>
+						</ol>
+					</div>
+					
+					
+					<div am-wrapSlideContent="5"> 
+						<h1 am-sliderHeadline>Optimize for Efficiency</h1>
+						<ul am-sliderParagraph>
+							<li>System Modernization & Consolidation</li>
+							<li>Virtualization & Cloud / SaaS</li>
+							<li>Managed Services</li>
+						</ul>
+						<a am-blueButton href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
+						<ol am-sliderBullets>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li am-marked><a href="">5</a></li>
+						</ol>
+					</div>
+					-->
+					
+					<div am-wrapSliderBoxes> <!--Wraps 3 fixed slider boxes-->
+						<a am-sliderBox="1" href="">
+							<h2>Comverse Is Value-Added Service Global Market Leader.</h2>
+							<p><i class="fa fa-link"></i>Read More</p>
+						</a>
+						<a am-sliderBox="2" href="">
+							<h2>Managed Services World Congress <time datetime="9-18/19">September 18-19</time> Berlin, Germany</h2>
+							<p><i class="fa fa-file-text-o"></i>Read More</p>
+						</a>
+						<a am-sliderBox="3" href="">
+							<h2>Comverse: Enabling a World of Connected Possibilities</h2>
+							<p><i class="fa fa-play-circle-o"></i>Watch Now</p>
+						</a>
+					</div>
+				</div>
+			</section>
+			
+			<section am-services> <!--Services section-->
+				<div am-layoutWrap="services">
+					<h2 am-sectionHeadline>WHAT CAN WE DO FOR YOU?</h2>
+					<ul am-servicesIcons> <!--List of icons-->
+						<li>
+							<a href=""><img src="images/icon1white.png" onmouseover="this.src='images/icon1.png'"
+							onmouseout="this.src='images/icon1white.png'" /><p>Business Simulating Analytics</p></a>
+						</li>
+						<li>
+							<a href=""><img src="images/icon2white.png" onmouseover="this.src='images/icon2.png'"
+							onmouseout="this.src='images/icon2white.png'" /><p>Digital Customer Experience</p></a>
+						</li>
+						<li>
+							<a href=""><img src="images/icon3white.png" onmouseover="this.src='images/icon3.png'"
+							onmouseout="this.src='images/icon3white.png'" /><p>Smart Monetization</p></a>
+						</li>
+						<li>
+							<a href=""><img src="images/icon4white.png" onmouseover="this.src='images/icon4.png'"
+							onmouseout="this.src='images/icon4white.png'" /><p>Optimization and Efficiency</p></a>
+						</li>
+						<li>
+							<a href=""><img src="images/icon5white.png" onmouseover="this.src='images/icon5.png'"
+							onmouseout="this.src='images/icon5white.png'" /><p>Personalized Choice & Control</p></a>
+						</li>
+						<li>
+							<a href=""><img src="images/icon6white.png" onmouseover="this.src='images/icon6.png'"
+							onmouseout="this.src='images/icon6white.png'" /><p>Business Transformation</p></a>
+						</li>
+					</ul>
+					<a am-blueButton="services" href="">See all solutions<span><i class="fa fa-caret-right"></i></span></a>
+				</div>
+			</section>
+			
+			<section am-solutions> <!--Solutions section-->
+				<div am-layoutWrap="solutions">
+					<h2 am-sectionHeadline>SOLUTIONS FOR</h2>
+					<ul>
+						<li am-solutionList><a href="">Mobile</a></li>
+						<li am-solutionList><a href="">Wireline</a></li>
+						<li am-solutionList><a href="">PayTV</a></li>
+						<li am-solutionList><a href="">Multi-Play</a></li>
+					</ul>
+				</div>
+			</section>
+			
+			<section am-news> <!--News section-->
+				<div am-layoutWrap="news">
+					<h2 am-sectionHeadline>WHAT'S HAPPENING AT COMVERSE?</h2>
+					<div am-wrapNewsSections> <!--Wraps 3 news sections-->
+						<section am-newsSection>
+							<h3>IN THE NEWS</h3>
+							<a am-inputNearTime="sectionBox" href="">
+								<div am-timeDayMonth>
+									<time datetime="8-29"><h3>29</h3><p>AUG</p></time>
+								</div>
+								<p>Creating a Compelling Carrier Comeback Solution</p>	
+							</a>
+							<a href=""><i class="fa fa-newspaper-o"></i>   All News</a>
+						</section>
+						<section am-newsSection>
+							<h3>EVENTS</h3>
+							<a am-inputNearTime="sectionBox" href="">
+								<div am-timeDayMonth>
+									<time datetime="9-16"><h3>16</h3><p>SEP</p></time>
+								</div>
+								<p>Managed Services World Congress 2014: The Growing Trend for Outsourcing IT</p>	
+							</a>
+							<a href=""><i class="fa fa-calendar"></i>   All Events</a>
+						</section>
+						<section am-newsSection>
+							<h3>PRESS RELEASES</h3>
+							<a am-inputNearTime="sectionBox" href="">
+								<div am-timeDayMonth>
+									<time datetime="9-4"><h3>09</h3><p>SEP</p></time>
+								</div>
+								<p>Comverse Announces Fiscal 2014 Second Quarter Results; Conference Call to be Held Today at 8:00 AM</p>	
+							</a>
+							<a href=""><i class="fa fa-comment-o"></i>  All Press Releases</a>
+						</section>
+					</div>
+				</div>
+			</section>
+			
+			<section am-successStories>
+				<div am-layoutWrap="successStories">
+					<h2 am-sectionHeadline="testimonials">SUCCESS STORIES</h2>
+					<div am-wrapTestimonials> <!--Wraps 3 boxes, each box contains several testimonials.-->
+						<div am-testimonialBox="1">
+							<a href="" am-success="large">
+								<div am-caption="large">
+									<div>
+										<img src="images/quote-blue.png" alt="" am-firstQuote>
+										<p>BTC, a full-service provider in the Bahamas, depends on Comverse solutions for real time BSS,voice services, SMS, MMS and data management and monetization.</p>
+										<img src="images/quote-blue.png" alt="" am-lastQuote>
+									</div>
+								</div>
+								<img src="images/success/client1.png" alt="" am-clientPhoto>
+								<blockquote>BTC, a full-service provider in the Bahamas, depends on Comverse solut...</blockquote>
+								<div>
+									<div>
+										<cite>JONATHAN PIERCE</cite>
+										<p>Group Mobile Architect</p>
+									</div>
+									<img src="images/success/btc.jpg" alt="" am-companyLogo>
+								</div>
+							</a>
+							<a href="" am-successSmall>
+								<div am-caption="small"><img src="images/success/hover.jpg" alt=""></div>
+								<img src="images/success/mtc.jpg" alt="">
+							</a>
+							<a href="" am-successSmall>
+								<div am-caption="small"><img src="images/success/hover.jpg" alt=""></div>
+								<img src="images/success/tata.jpg" alt="">
+							</a>
+							<a href="" am-successSmall>
+								<div am-caption="small"><img src="images/success/hover.jpg" alt=""></div>
+								<img src="images/success/upc.jpg" alt="">
+							</a>
+						</div>
+						<div am-testimonialBox="2">
+							<a href=""am-successSmall>
+								<div am-caption="small"><img src="images/success/hover.jpg" alt=""></div>
+								<img src="images/success/max.jpg" alt="">
+							</a>
+							<a href="" am-successSmall>
+								<div am-caption="small"><img src="images/success/hover.jpg" alt=""></div>
+								<img src="images/success/star.jpg" alt="">
+							</a>
+							<a href="" am-successSmall>
+								<div am-caption="small"><img src="images/success/hover.jpg" alt=""></div>
+								<img src="images/success/videocon.jpg" alt="">
+							</a>
+							<a href="" am-success="large">
+								<div am-caption="large">
+									<div>
+										<img src="images/quote-blue.png" alt="" am-firstQuote>
+										<p>The expectations of Jersey Telecom have been completely met by Comverse ONE BSS - and in some areas exceeded.</p>
+										<img src="images/quote-blue.png" alt="" am-lastQuote>
+									</div>
+								</div>
+								<img src="images/success/client2.png" alt="" am-clientPhoto>
+								<blockquote>The expectations of Jersey Telecom have been completely met by Comvers...</blockquote>
+								<div>
+									<div>
+										<cite>GRAEME MILLER</cite>
+										<p>CEO</p>
+									</div>
+									<img src="images/success/jt.jpg" alt="" am-companyLogo>
+								</div>
+							</a>
+						</div>
+						<div am-testimonialBox="3">
+							<a href="" am-success>
+								<div am-caption="medium">
+									<div>
+										<img src="images/quote-blue.png" alt="" am-firstQuote>
+										<p>Comverse has demonstrated that they are partners, not just suppliers</p>
+										<img src="images/quote-blue.png" alt="" am-lastQuote>
+									</div>
+								</div>
+								<blockquote>Comverse has demonstrated that they are partners, not just suppliers</blockquote>
+								<div>
+									<div>
+										<cite>ADALE  KEHASSAN</cite>
+										<p>CIO</p>
+									</div>
+									<img src="images/success/multilinks.jpg" alt="" am-companyLogo>
+								</div>
+							</a>
+							<a href="" am-successSmall>
+								<div am-caption="small"><img src="images/success/hover.jpg" alt=""></div>
+								<img src="images/success/3mob.jpg" alt="">
+							</a>
+							<a href="" am-successSmall>
+								<div am-caption="small"><img src="images/success/hover.jpg" alt=""></div>
+								<img src="images/success/play.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<a am-blueButton href="">All 79 Success Stories<span><i class="fa fa-caret-right"></i></span></a>
+					<a am-toTop href="#top"><i class="fa fa-angle-up"></i></a>
+				</div>
 			</section>
 		</div>
-		<footer id="about"> <!--Footer sections contains a headline, a wrapper div of logos and a socket div-->
-			<h2>קצת עלינו</h2>
-			<div class="wrapper">
-				<img src="netcraftLogo.png" alt="Netcraft logo">
-				<div class="wrapper">
-					<h3>נטקראפט</h3>
-					<p>NETCRAFT מעצבת, מאפיינת ומפתחת פתרונות אינטרנט המאפשרים ללקוחותיה לייצר הצלחה עסקית ויתרון תחרותי בשוק בו הם פועלים. המתכון הסודי שלנו מורכב מאנשים מצויינים, נסיון כשיר, מתודולוגיה מנצחת והרבה חיוכים.</p>
+			
+		<footer> <!--Footer contains 3 widgets (which are used for site navigation), a social widget and some general information.-->
+			<div am-layoutWrap="footer">
+				<ul am-footerWidgetList> <!--Wraps 3 widgets. Is a list because it matches main navigation.-->
+					<li>
+						<div am-footerWidget>
+							<h2>YOUR NEEDS</h2>
+							<ul>
+								<li>
+									<a href="">Smart Monetization</a>
+								</li>
+								<li>
+									<a href="">Digital Customer Experience</a>
+								</li>
+								<li>
+									<a href="">Personalized Choice & Control</a>
+								</li>
+								<li>
+									<a href="">Optimization and Efficiency</a>
+								</li>
+								<li>
+									<a href="">Business Stimulating Analytics</a>
+								</li>
+								<li>
+									<a href="">Business Transformation</a>
+								</li>
+								<li>
+									<a href="">Customer Evolution</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div am-footerWidget>
+							<h2>OUR PORTFOLIO</h2>
+							<ul>
+								<li>
+									<a href="">BSS - Business Support Systems</a>
+								</li>
+								<li>
+									<a href="">Digital Services</a>
+								</li>
+								<li>
+									<a href="">Policy</a>
+								</li>
+								<li>
+									<a href="">Services</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div am-footerWidget>
+							<h2>NEWS & MEDIA</h2>
+							<ul>
+								<li>
+									<a href="">Press Releases</a>
+								</li>
+								<li>
+									<a href="">Events</a>
+								</li>
+								<li>
+									<a href="">In the News</a>
+								</li>
+								<li>
+									<a href="">Success Stories</a>
+								</li>
+								<li>
+									<a href="">Awards</a>
+								</li>
+								<li>
+									<a href="">Multimeda & Webinars</a>
+								</li>
+								<li>
+									<a href="">Newsletter</a>
+								</li>
+								<li>
+									<a href="">Articles and Paper</a>
+								</li>
+								<li>
+									<a href="">Careers</a>
+								</li>
+								<li>
+									<a href="">About Comverse</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div am-socialWidget> <!--Social widget contains latest press release, site subscription and social media links.-->
+					<h2>LATEST PRESS RELEASE</h2>
+					<a am-inputNearTime="social" href=""> <!--Latest press realse-->
+						<div am-timeDayMonth>
+							<time datetime="9-9"><h3>09</h3><p>SEP</p></time>
+						</div>
+						<p>Comverse Announces Fiscal 2014 Second Quarter Results; Conference Call to be Held Today at 8:00 AM</p>	
+					</a>
+					<h2>SUBSCRIBE TO COMVERSE</h2>
+					<div am-inputSubmit="subscribe"> <!--Site subscription-->
+						<input am-input="subscribe" type="text" placeholder="">
+						<button am-submit="subscribe">SIGN UP</i></button>
+					</div>
+					<ul am-socialIcons> <!--Social media links-->
+						<li><a href="http://instagram.com/comverse"><i class="fa fa-instagram fa-2x"></i></a></li>
+						<li><a href="http://youtube.com/comverse"><i class="fa fa-youtube fa-2x"></i></a></li>
+						<li><a href="http://twitter.com/comverse"><i class="fa fa-twitter fa-2x"></i></a></li>
+					</ul>
 				</div>
-				<img src="digitalDesignEvent.png" alt="Digital Design Event">
-				<img src="uXacademy.png" alt="UX Academy">
-				<img src="uXonBeer.png" alt="UX On Beer">
-				<img src="ourBlog.png" alt="Our Blog">
-			</div>
-			<div id="socket">
-				<p>כל הזכויות שמורות לנטקראפט © 2012 | תרימו טלפון: <a href="tel:987455698">987455698</a> | בואו לבקר אותנו בבניין תפוז אנשים רחוב בן גוריון 30, קומה ראשונה, ר"ג | <a href="mailto:info@netcraft.co.il">INFO@NETCRAFT.CO.IL</a>
-				<img src="netcraftLogo.png" alt="Netcraft logo">
+				<p am-infoRow>Copyright © 2014 Comverse, Inc. | <a href="">Privacy Policy</a> | <a href="">Sitemap</a> | <a href="">Contact Us</a></p> <!--Info row-->
 			</div>
 		</footer>
-			
 	</body>
-</html>
+					
+				
+				
+	
+
+
+
+
