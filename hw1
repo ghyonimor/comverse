@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>List of lectures</title>
+        <meta name="author" content="Yoni Mor">
+    </head>
+    
+    <body>
+        <H1>This is a list of lectures</H1>
+        <ul>
+            <li>
+                <H2>Where Computer Science And Web Development Meet</H2>
+                <cite>By Dr Homer Simpson, <time datetime="2014-9-1">Sept. 1 2014, 10 pm</time></cite>
+                <p>A review of using computer science knowledge on web development: Web Data structures, Statistical algorithms, Operating systems and the web, Problem solving, Recursions, Web multithreading, Databases, Distributed Systems And Cloud Computing, Compilation, Web Cryptography.</p>
+            </li>
+            <li>
+                <H2>Object Oriented Programming Using Javascript</H2>
+                <cite>By Serge Krul, <time datetime="2014-9-20">Sept. 20 2014, 9 pm</time></cite>
+                <p>The principles of OOP, DRY Principle, The difference between OOP and other programming paradigms (Functional programming, Procedural Programming) and how to implement OOP with JS. </p>
+            </li>
+            <li>
+                <H2>What Is MVC Architecture? The Principles Of MVC And Modern Implementations</H2>
+                <cite>By Alex Ilyaev, <time datetime="2014-10-9">Oct. 9 2014, 11 pm</time></cite>
+                <p>A review of software engineering architecture MVC: History, Benefits, Shortcomings, Principles, Modern implementation using Angular.js.</p>
+            </li>
+            <li>
+                <H2>Creating A Full Stack Single Page Web Application Using MEAN Stack</H2>
+                <cite>By Lavi Perchik, <time datetime="2014-12-23">Dec. 23 2014, 11 pm</time></cite>
+                <p>Using MEAN (Mongo DB, Express, Angular, Node.js) stack to create a single page web application, Comparison with other web stacks such as LAMP.</p>
+            </li>
+        </ul>
+    </body>
+</html>
