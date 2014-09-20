@@ -420,7 +420,7 @@ footer {
 }
 
 /*Responsive design*/
-@media all and (min-width:400px) and (max-width:1100px) {
+@media all and (min-width:800px) and (max-width:1100px) {
 	[am-layoutWrap] {
 		width: 750px;
 	}
@@ -632,6 +632,10 @@ footer {
 
 	[am-socialIcons] li i {
 		color:grey;
+	}
+
+	@media all and (max-width:800px) {
+		
 	}
 	
 }
