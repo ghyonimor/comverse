@@ -14,9 +14,12 @@
 	<body>
 		<header> <!--Header contains logo, main dropdown navigation, site search, language menu and customer login.-->
 			<div am-layoutWrap="header"> <!--A layout width container.-->
+			<label am-menuMobile for="menu"><i class="fa fa-bars"></i></label>
 			<a href="" am-logo><img src="images/logo.png" alt="Comverse logo"></a>
+			<label am-searchMobile for="search"><i class="fa fa-search"></i></label>
 			<div am-wrapNavAndSearch>
 				<nav am-nav="main"> <!--Main dropdown navigation.-->
+					<input type="checkbox" id="menu">
 					<ul> 
 						<li><a href="">YOUR NEEDS</a>
 							<div am-dropdown>
@@ -117,6 +120,7 @@
 						</li>		
 					</ul>
 				</nav>
+				<input type="checkbox" id="search">
 				<div am-inputSubmit="search"> <!--Site search-->
 					<input am-input="search" type="text" placeholder="">
 					<button am-submit="search"><i class="fa fa-search"></i></button>
