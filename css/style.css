@@ -163,10 +163,10 @@ a {
 
 /*Blue button*/
 [am-blueButton] {
-	background:blue;
+	background:linear-gradient(to bottom, rgba(66,126,147,0.9) 0%,rgba(0,74,104,0.9) 100%);;
 	color:white;
 	border:0;
-	box-shadow: 0px 0px 3px blue;
+	box-shadow: 0px 1px 5px #333;
 	border-radius:3px;
 	padding:10px 20px;
 	width:150px;
@@ -176,7 +176,7 @@ a {
 }
 
 [am-blueButton]:hover {
-	background: rgba(0,0,255,0.7);
+	background: linear-gradient(to bottom, #40a2d5 0%, #289ad2 100%);
 }
 
 [am-blueButton] span {
@@ -191,12 +191,11 @@ a {
 [am-sliderBullets] li{
 	background:white;
 	display:inline-block;
-	border:1px solid black;
 	width:10px;
 	height:10px;
 	color:white;
 	font-size:0.1px;
-	border-radius:2px;
+	border-radius:5px;
 }
 
 [am-sliderBullets] a{
@@ -204,10 +203,13 @@ a {
 	padding:5px;
 	line-height:10px;
 	background:white;
+	border-radius:3px;
+	color:#333;
 }
 
 [am-sliderBullets] a:active {
-	background:blue;
+	background:#3399cc;
+	color:white;
 }
 
 /*Slider box*/
@@ -404,7 +406,7 @@ a {
 
 [am-success] > div > div  cite {
 	font-style:normal;
-	color:blue;
+	color:#3AA6DB;;
 }
 
 [am-success] > div > img {

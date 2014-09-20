@@ -144,7 +144,7 @@
 				<div am-layoutWrap="main slider"> <!--Slider section content wrap-->
 					<div am-wrapSlideContent="1"> <!--Wraps slider headline, paragraph, CTA and bullets. Each slide is marked by a number.-->
 						<h1 am-sliderHeadline>DIGITAL SERVICES</h1>
-						<a am-blueButton href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
+						<a am-blueButton="slide1" href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
 						<ol am-sliderBullets>
 							<li am-marked><a href="">1</a></li>
 							<li><a href="">2</a></li>
@@ -536,11 +536,30 @@
 					</ul>
 				</div>
 				<p am-infoRow>Copyright © 2014 Comverse, Inc. | <a href="">Privacy Policy</a> | <a href="">Sitemap</a> | <a href="">Contact Us</a></p> <!--Info row-->
-				<ul am-socialIcons="1"> <!--Social media links-->
-						<li><a href="http://instagram.com/comverse"><i class="fa fa-instagram fa-2x"></i></a></li>
-						<li><a href="http://youtube.com/comverse"><i class="fa fa-youtube fa-2x"></i></a></li>
-						<li><a href="http://twitter.com/comverse"><i class="fa fa-twitter fa-2x"></i></a></li>
+				<ul am-socialIcons="tablet"> <!--Social media links-->
+					<li><a href="http://instagram.com/comverse"><i class="fa fa-instagram fa-2x"></i></a></li>
+					<li><a href="http://youtube.com/comverse"><i class="fa fa-youtube fa-2x"></i></a></li>
+					<li><a href="http://twitter.com/comverse"><i class="fa fa-twitter fa-2x"></i></a></li>
+				</ul>
+				<div am-mobileFooter>
+					<ul am-footerLinksMobile>
+						<li am-contactMobile>
+							<a href="">CONTACT US</a>
+						</li>
+						<li am-subscribeMobile>
+							<a href="">SUBSCRIBE TO COMVERSE NEWS</a>
+						</li>
+						<li am-socialMobile>
+							<p>VISIT US ON:</p>
+							<ul am-socialIcons="mobile"> <!--Social media links-->
+								<li><a href="http://instagram.com/comverse"><i class="fa fa-instagram fa-2x"></i></a></li>
+								<li><a href="http://youtube.com/comverse"><i class="fa fa-youtube fa-2x"></i></a></li>
+								<li><a href="http://twitter.com/comverse"><i class="fa fa-twitter fa-2x"></i></a></li>
+							</ul>
+						</li>
 					</ul>
+					<p am-mobileInfo>Copyright © 2014 Comverse, Inc. | <a href="">Privacy Policy</a> | <a href="">Sitemap</a></p>
+				</div>
 			</div>
 		</footer>
 	</body>
