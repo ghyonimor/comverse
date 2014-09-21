@@ -28,7 +28,7 @@ a {
 }
 
 [am-nav~="main"] > ul > li  > a {
-	color:#222;
+	color: rgb(88, 89, 81);
 	font-size:0.9em;
 	text-decoration: none;
 	padding:10px 10px 20px 10px;
@@ -38,10 +38,10 @@ a {
 
 /*Dropdown nav*/
 [am-dropdown]{
-	background:white;
+	background:#fcfcfc;
 	display:inline-block;
-	box-shadow: -5px 10px 10px grey;
-	border: 1px solid lightgrey;
+	box-shadow: -5px 9px 8px rgba(0,0,0,0.4);
+	border: 1px solid #D5D5D5;
 	border-top:0;
 	padding:20px;
 }
@@ -78,7 +78,7 @@ a {
 	height:195px;
 	padding-left:50px;
 	padding-right:30px;
-	border-left: 1px solid lightgrey;
+	border-left: 1px solid #D5D5D5;
 }
 
 /*Text and button*/
@@ -117,7 +117,7 @@ a {
 	height: 20px;
 	width:150px;
 	border-radius: 5px;
-	border:1px solid lightgrey;
+	border: 1px solid #d2d2d2;
 }
 
 [am-input~="search"] {
@@ -127,7 +127,7 @@ a {
 
 [am-submit~="search"]{
 	color: #0099CC;
-	border-left: 1px solid lightgrey;
+	border-left: 1px solid #D5D5D5;
 	width:30px;
 	border-top-right-radius:5px;
 	border-bottom-right-radius:5px;
@@ -140,12 +140,13 @@ a {
 }
 
 [am-lang] select {
+	color: #585951;
 	border: none;
 	background: Transparent;
 }
 
 [am-login] {	
-	color:black;
+	color:#585951;
 	text-decoration: none;
 }
 
@@ -406,7 +407,7 @@ a {
 
 [am-success] > div > div  cite {
 	font-style:normal;
-	color:#3AA6DB;;
+	color:#3AA6DB;
 }
 
 [am-success] > div > img {
