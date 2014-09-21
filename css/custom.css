@@ -270,7 +270,7 @@ input {
 }
 
 [am-layoutWrap~="successStories"] [am-sectionHeadline~="testimonials"] {
-	color:black;
+	color:#565656;
 	text-shadow:none;
 	padding:0;
 	margin-bottom:50px;
@@ -313,7 +313,7 @@ input {
 body {
 	z-index:1;
 	margin:0;
-	background:lightgrey;
+	background:#ECECEC;
 	position:relative;
 }
 
@@ -446,7 +446,7 @@ footer {
 
 [am-successStories] {
 	position:relative;
-	background:lightgrey;
+	background: #ECECEC;
 }
 
 [am-wrapTestimonials] {
@@ -458,7 +458,7 @@ footer {
 }
 
 footer {
-	background:black;
+	background: url("../images/footerBG.png") repeat scroll center 0, radial-gradient(ellipse at center, #ffffff 0%,transparent 100%);
 	position:relative;
 }
 
