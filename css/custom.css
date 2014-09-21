@@ -191,7 +191,7 @@ input {
 }
 
 [am-success] [am-caption] {
-	position:absolute;
+	position:relative;
 	background:#3AA6DB;
 	color:white;
 	z-index: 10;
@@ -205,7 +205,9 @@ input {
 
 [am-success] [am-caption] {
 	height:0;
-	transition: height 1s;
+    transition-property: height;
+    transition-duration: 1s;
+    transition-delay: 0;
 }
 
 [am-success~="large"]:hover [am-caption] {
@@ -222,8 +224,7 @@ input {
 }
 
 [am-success]:hover [am-caption~="medium"] {
-	width:222px;
-	height:208px;
+	height:210px;
 }
 
 [am-success] blockquote, [am-success] cite + p {
@@ -597,18 +598,18 @@ footer {
 	}
 
 	[am-success] {
-		width:153px;
-		height:190px;
+		width:173px;
+		height:210px;
 	}
 
 	[am-success~="large"] {
-		width:245px;
-		height:190px;
+		width:265px;
+		height:210px;
 	}
 
 	[am-successSmall], [am-successSmall] [am-caption~="small"] img, [am-successSmall] img {
 		width:80px;
-		height:80px;
+		height: 80px;
 		padding:0;
 	}
 
