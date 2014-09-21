@@ -353,7 +353,6 @@ section {
 
 [am-successStories] {
 	z-index:2;
-	box-shadow: none;
 }
 
 footer {
@@ -692,6 +691,7 @@ footer {
 		width:50px;
 		height:30px;
 		line-height:30px;
+		border-bottom:0;
 	}
 
 	[am-socialIcons~="tablet"] {
@@ -1036,6 +1036,11 @@ footer {
 		position: relative;
 	}
 
+	[am-successStories] {
+		z-index:2;
+		box-shadow:none;
+	}
+
 	[am-toTop] {
 		position:absolute;
 		bottom:-30px;
@@ -1062,7 +1067,7 @@ footer {
 
 	[am-footerLinksMobile] > li {
 		display:block;
-		background:#222;
+		background: url("../images/footerBG.png") repeat scroll center 0, radial-gradient(ellipse at center, #ffffff 0%,transparent 100%);
 	}
 
 	[am-footerLinksMobile] li {
@@ -1086,7 +1091,7 @@ footer {
 	}
 
 	[am-footerLinksMobile] > li > a:hover {
-		background:grey;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ccc), color-stop(1, #9e9e9e) );
 	}
 
 	[am-mobileFooter] p {

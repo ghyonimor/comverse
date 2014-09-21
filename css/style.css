@@ -494,10 +494,15 @@ a {
 	color:white;
 }
 
+[am-footerWidget] ul li a:hover {
+	text-decoration: underline;
+}
+
 /*Social widget*/
 [am-socialWidget] {
 	display:inline-block;
-	border:1px solid black;
+	border-left:1px solid black;
+	border-right:1px solid black;
 	text-align: center;
 	background:rgba(132, 132, 132, 0.3);
 	padding:20px
@@ -514,7 +519,7 @@ a {
 }
 
 [am-inputNearTime~="social"] {
-	border-bottom:1px solid lightgrey;
+	border-bottom: 1px solid #6A6A6A;
 	padding:0;
 }
 
