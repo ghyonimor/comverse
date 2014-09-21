@@ -99,7 +99,7 @@ input {
 }
 
 [am-sliderBox~="1"]:hover {
-	background: rgba(255, 102, 0, 1);
+	background: #ff5400;
 }
 
 [am-sliderBox~="2"] {
@@ -107,7 +107,7 @@ input {
 }
 
 [am-sliderBox~="2"]:hover {
-	background: rgba(255, 51, 154, 1);
+	background: #d82b82;
 }
 
 [am-sliderBox~="3"] {
@@ -115,7 +115,7 @@ input {
 }
 
 [am-sliderBox~="3"]:hover {
-	background: rgba(102, 204, 51, 1);
+	background: #5aa435;
 }
 
 [am-servicesIcons] {
@@ -329,6 +329,37 @@ header {
 	z-index:1000000;
 }
 
+section {
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+[am-slider] {
+	z-index:6;
+}
+
+[am-services] {
+	z-index:5;
+}
+
+[am-solutions] {
+	z-index:4;
+	box-shadow: none;
+}
+
+[am-news] {
+	z-index:3;
+	box-shadow: none;
+}
+
+[am-successStories] {
+	z-index:2;
+	box-shadow: none;
+}
+
+footer {
+	z-index:1;
+}
+
 [am-main] {
 	display:block;
 }
@@ -386,7 +417,7 @@ header {
 }
 
 [am-services] {
-	background: url("../images/cover.png") repeat scroll 0 0 #3399cc;
+	background: url("../images/weDoBG.png") repeat scroll 0 0, radial-gradient(ellipse at center, #59bedb 0%,#3399cc 100%);
 	position:relative;
 	bottom:50px;
 	padding-bottom:30px;
@@ -399,7 +430,7 @@ header {
 }
 
 [am-solutions] {
-	background:grey;
+	background: #646263;
 	position:relative;
 	bottom:85px;
 	padding-bottom:50px;
