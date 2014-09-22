@@ -622,6 +622,10 @@ footer {
 		height:210px;
 	}
 
+	[am-success] > div > div {
+		margin-top:0px;
+	}
+
 	[am-success~="large"] {
 		width:265px;
 		height:210px;

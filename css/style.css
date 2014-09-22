@@ -409,6 +409,7 @@ a {
 	padding-top:10px;
 	border-top:1px solid lightgrey;
 	margin:10px;
+	margin-top:10px;
 }
 
 [am-success] > div > div > div {
