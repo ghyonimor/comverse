@@ -404,25 +404,25 @@ a {
 	margin: 0px 5px 0px 5px;
 }
 
-[am-success] > div {
+[am-success] > div > div {
 	display:block;
 	padding-top:10px;
 	border-top:1px solid lightgrey;
 	margin:10px;
 }
 
-[am-success] > div > div {
+[am-success] > div > div > div {
 	display:inline-block;
 	width:125px;
 	font-size:0.8em;
 }
 
-[am-success] > div > div  cite {
+[am-success] > div > div > div cite {
 	font-style:normal;
 	color:#3AA6DB;
 }
 
-[am-success] > div > img {
+[am-success] > [am-story] > div > img {
 	display:inline- block;
 	width:70px;
 	float:right;
@@ -434,7 +434,7 @@ a {
 	width: 340px;
 }
 
-[am-success~="large"] > div > div {
+[am-success~="large"] > div > div > div {
 	width:200px;
 }
 
