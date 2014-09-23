@@ -178,6 +178,10 @@ input {
 	font-size: 2em;
 }
 
+[am-wrapNewsSections] {
+	padding:20px 0px 40px 0px;
+}
+
 [am-newsSection] {
 	margin-right:15px;
 }
@@ -1103,6 +1107,10 @@ footer {
 
 	[am-solutionList]:last-child {
 		margin-right:15px;
+	}
+
+	[am-wrapNewsSections] {
+		padding:0px;
 	}
 
 	[am-newsSection] {
