@@ -299,8 +299,8 @@ input {
 }
 
 [am-successSmall] [am-caption~="small"] img{
-	width: 105px;
-	height:92px;
+	width: 107px;
+	height:94px;
 	padding:0;
 }
 
@@ -308,8 +308,8 @@ input {
 	position:relative;
 	z-index:202;
 	padding:0;
-	width:105px;
-	height:92px;
+	width:107px;
+	height:94px;
 	transition: transform 0.75s
 }
 
@@ -665,13 +665,13 @@ footer {
 	}
 
 	[am-success~="large"] {
-		width:265px;
+		width:264px;
 		height:210px;
 	}
 
 	[am-successSmall], [am-successSmall] [am-caption~="small"] img, [am-successSmall] img {
-		width:80px;
-		height: 80px;
+		width:81px;
+		height: 81px;
 		padding:0;
 	}
 
