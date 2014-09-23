@@ -142,6 +142,7 @@ input {
 [am-servicesIcons] img {
 	width:100%;
 	display:block;
+	margin: 0 auto;
 }
 
 [am-servicesIcons] [am-hover] {
