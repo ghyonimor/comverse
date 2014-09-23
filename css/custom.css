@@ -789,6 +789,7 @@ footer {
 		transition: height 1s;
 		z-index:100;
 		top:60px;
+		border-top: 1px solid #d9d9d9;
 	}
 
 	#menu:checked + ul {
@@ -803,7 +804,7 @@ footer {
 		padding: 0;
 		border-bottom:1px solid #d9d9d9;
 		position:relative;
-		background: #e5e5e5;
+		background: url("../images/bodyBG.png") repeat scroll 0 0 #fff;
 	}
 
 	[am-nav~="main"] label {
