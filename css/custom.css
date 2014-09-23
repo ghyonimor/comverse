@@ -78,6 +78,8 @@ input {
 
 [am-sliderBullets] {
 	padding:0;
+	display:inline-block;
+	position: absolute;
 }
 
 [am-sliderBullets] [am-marked] a{
@@ -190,21 +192,21 @@ input {
 }
 
 [am-testimonialBox="1"], [am-testimonialBox="2"] {
-	width:350px;
+	width:348px;
 	display:inline-block;
 	vertical-align:top;
 }
 
 [am-testimonialBox~="1"] [am-successSmall], [am-testimonialBox="3"] [am-successSmall] {
-	margin-top:10px;
+	margin-top:6px;
 }
 
 [am-testimonialBox~="2"] [am-successSmall] {
-	margin-bottom:10px;
+	margin-bottom:6px;
 }
 
 [am-testimonialBox="3"] {
-	width:230px;
+	width:225px;
 	display:inline-block;
 	vertical-align:top;
 }
@@ -676,7 +678,7 @@ footer {
 	}
 
 	[am-testimonialBox="1"], [am-testimonialBox="2"] {
-		width:277px;
+		width:270px;
 	}
 
 	[am-testimonialBox="3"] {

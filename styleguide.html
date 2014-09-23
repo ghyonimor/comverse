@@ -9,219 +9,249 @@
 	</head>
 
 	<body> 
-		<h1>Main logo</h1>
-		<a href="" am-logo><img src="images/logo.png" alt="Comverse logo"></a>
+		<h1 am-projectHeadline>Comverse project styleguide</h1>
+		<div am-wrapper>
+			<h1 style="margin-top:0;">Main logo</h1>
+			<a href="" am-logo><img src="images/logo.png" alt="Comverse logo"></a>
 
-		<h1>Main navigation</h1>
-		<nav am-nav="main">
-			<ul> 
-				<li><a href="">ONE</a></li>
-				<li><a href="">TWO</a></li>
-				<li><a href="">THREE</a></li>
-				<li><a href="">FOUR</a></li>		
-			</ul>
-		</nav>
-		
-		<h1>Dropdown navigation</h1>
-		<div am-dropdown>
-			<div>
-				<ul>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
+			<h1>Main navigation</h1>
+			<nav am-nav="main">
+				<ul> 
+					<li><a href="">ONE</a></li>
+					<li><a href="">TWO</a></li>
+					<li><a href="">THREE</a></li>
+					<li><a href="">FOUR</a></li>		
 				</ul>
-				<ul>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-					<li><a href="">Some link</a></li>
-				</ul>
+			</nav>
+			
+			<h1>Dropdown navigation</h1>
+			<div am-dropdown>
+				<div>
+					<ul>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+					</ul>
+					<ul>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+						<li><a href="">Some link</a></li>
+					</ul>
+				</div>
+				<div>
+					<a href=""><img src="images/dropdown1.jpg" alt="dropdown image"></a>
+				</div>
 			</div>
-			<div>
-				<a href=""><img src="images/dropdown1.jpg" alt="dropdown image"></a>
+			
+			<h1>Text and button</h1>
+			<div am-inputSubmit>
+				<input am-input type="text" placeholder="">
+				<button am-submit><i class="fa fa-search"><!--Font awesome icon--></i></button>
 			</div>
-		</div>
-		
-		<h1>Text and button</h1>
-		<div am-inputSubmit>
-			<input am-input type="text" placeholder="">
-			<button am-submit><i class="fa fa-search"><!--Font awesome icon--></i></button>
-		</div>
-		
-		<h1>Search text and button</h1>
-		<div am-inputSubmit="search"> <!--Search zone-->
-			<input am-input="search" type="text" placeholder="">
-			<button am-submit="search"><i class="fa fa-search"><!--Font awesome icon--></i></button>
-		</div>
-		
-		<h1>Language navigation + customer login</h1>
-		<nav am-lang>
-			<select>
-		        <option value="One">One</option>
-				<option value="Two">Two</option>
-		        <option value="Three">Three</option>
-		   	    <option value="Four">Four</option>
-			</select>
-		</nav>
-		<a href="" am-login>Customer login</a>
-
-		<h1>Slider headline</h1>
-		<h1 am-sliderHeadline>Some headline</h1>
-
-		<h1>Slider paragraph</h1>
-		<p am-sliderParagraph>Some paragraph</p>
-
-		<h1>Blue button</h1>
-		<a am-blueButton href="">Blue button<span><i class="fa fa-caret-right"></i></span></a>
-
-		<h1>Slider bullet navigation</h1>
-		<ol am-sliderBullets>
-			<li><a href="">1</a></li>
-			<li><a href="">2</a></li>
-			<li><a href="">3</a></li>
-			<li><a href="">4</a></li>
-		</ol>
-
-		<h1>Slider box</h1>
-		<a am-sliderBox href="">
-			<h2>Some text Some text Some text Some text Some text </h2>
-			<p><i class="fa fa-search"></i>Read more</p><!--Icon here-->
-		</a>
-		
-		<h1>Section headline</h1>
-		<h2 am-sectionHeadline>Some headline</h2>
-		
-		<h1>Icon list</h1>
-		<ul am-servicesIcons>
-			<li>
-				<a href=""><!--Icon here--><i class="fa fa-line-chart"></i><p>SMART MONETIZATION</p></a>
-			</li>
-			<li>
-				<a href=""><!--Icon here--><i class="fa fa-shopping-cart"></i><p>E COMMERCE</p></a>
-			</li>
-			<li>
-				<a href=""><!--Icon here--><i class="fa fa-mobile-phone"></i><p>MOBILE READY</p></a>
-			</li>
-			<li>
-				<a href=""><!--Icon here--><i class="fa fa-search"></i><p>GOOGLE FRIENDLY</p></a>
-			</li>
-			<li>
-				<a href=""><!--Icon here--><i class="fa fa-cloud"></i><p>CLOUD COMPUTING</p></a>
-			</li>
-			<li>
-				<a href=""><!--Icon here--><i class="fa fa-comments"></i><p>SOCIAL MEDIA</p></a>
-			</li>
-		</ul>
-		
-		<h1>Time Day-above-month</h1>
-		<div  am-timeDayMonth><time datetime="9-01"><h3>01</h3><p>SEP</p></time></div>
-		
-		<h1>Text near time</h1>
-		<a am-inputNearTime href="">
-			<div am-timeDayMonth>
-				<time datetime="9-4"><h3>04</h3><p>SEP</p></time>
+			
+			<h1>Search text and button</h1>
+			<div am-inputSubmit="search"> <!--Search zone-->
+				<input am-input="search" type="text" placeholder="">
+				<button am-submit="search"><i class="fa fa-search"><!--Font awesome icon--></i></button>
 			</div>
-			<p>Some text Some text Some text Some text</p>	
-		</a>
-		
-		<h1>Section box</h1>
-		<div am-newsSection>
-			<h3>Some headline</h3>
-			<a am-inputNearTime="sectionBox" href="">
+			
+			<h1>Language navigation + customer login</h1>
+			<nav am-lang>
+				<select>
+			        <option value="One">One</option>
+					<option value="Two">Two</option>
+			        <option value="Three">Three</option>
+			   	    <option value="Four">Four</option>
+				</select>
+			</nav>
+			<a href="" am-login>Customer login</a>
+
+			<h1>Slider headline</h1>
+			<h1 am-sliderHeadline>Some headline</h1>
+
+			<h1>Slider paragraph</h1>
+			<p am-sliderParagraph>Some paragraph</p>
+
+			<h1>Blue button</h1>
+			<a am-blueButton href="">Blue button<span><i class="fa fa-caret-right"></i></span></a>
+
+			<h1>Slider bullet navigation</h1>
+			<ol am-sliderBullets>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+			</ol>
+
+			<h1>Slider box</h1>
+			<a am-sliderBox href="">
+				<h2>Some text Some text Some text Some text Some text </h2>
+				<p><i class="fa fa-search"></i>Read more</p><!--Icon here-->
+			</a>
+			
+			<h1>Section headline</h1>
+			<h2 style="padding:0; text-align:left;" am-sectionHeadline>Some headline</h2>
+			
+			<h1>Icon list</h1>
+			<ul am-servicesIcons> <!--List of icons-->
+							<li>
+								<a href="">
+									<img src="images/icon1white.png">
+									<img src="images/icon1.png" am-hover>
+									<p>Business Simulating Analytics</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/icon2white.png">
+									<img src="images/icon2.png" am-hover>
+									<p>Business Simulating Analytics</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/icon3white.png">
+									<img src="images/icon3.png" am-hover>
+									<p>Business Simulating Analytics</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/icon4white.png">
+									<img src="images/icon4.png" am-hover>
+									<p>Business Simulating Analytics</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/icon5white.png">
+									<img src="images/icon5.png" am-hover>
+									<p>Business Simulating Analytics</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/icon6white.png">
+									<img src="images/icon6.png" am-hover>
+									<p>Business Simulating Analytics</p>
+								</a>
+							</li>
+						</ul>
+			
+			<h1>Time Day-above-month</h1>
+			<div  am-timeDayMonth><time datetime="9-01"><h3>01</h3><p>SEP</p></time></div>
+			
+			<h1>input near time</h1>
+			<a am-inputNearTime href="" style="padding:0;">
 				<div am-timeDayMonth>
 					<time datetime="9-4"><h3>04</h3><p>SEP</p></time>
 				</div>
 				<p>Some text Some text Some text Some text</p>	
 			</a>
-			<a href=""><i class="fa fa-search"></i>   All events</a>
-		</div>
-		
-		<h1>Success story medium box</h1>
-		<div am-success>
-			<blockquote>Some quote Some quote Some quote Some quote Some quote Some quote Some quote</blockquote>
-			<div>
-				<div>
-					<cite>Client name</cite>
-					<p>Client position</p>
-				</div>
-				<img src="images/company.jpg" alt="" am-companyLogo><!--Client company logo-->
-			</div>
-		</div>
-		
-		<h1>Success story large box</h1>
-		<div am-success="large">
-			<img src="images/client.png" alt="" am-clientPhoto><!--Client photo-->
-			<blockquote>Some quote Some quote Some quote Some quote Some quote Some quote Some quote </blockquote>
-			<div>
-				<div>
-					<cite>Client name</cite>
-					<p>Client position</p>
-				</div>
-				<img src="images/company.jpg" alt="" am-companyLogo><!--Client company logo-->
-			</div>
-		</div>
-		
-		<h1>Success story small box</h1>
-		<div am-successSmall>
-			<img src="images/company.jpg" alt=""><!--Client company logo-->
-		</div>
-		
-		<h1>To top button</h1>
-		<a am-toTop href="#top"><i class="fa fa-angle-up"></i></a>
-		
-		<h1>Footer widget</h1>
-		<div am-footerWidget>
-			<h2>Some headline</h2>
-			<ul>
-				<li>
-					<a href="">Some link</a>
-				</li>
-				<li>
-					<a href="">Some link</a>
-				</li>
-				<li>
-					<a href="">Some link</a>
-				</li>
-			</ul>
-		</div>
-		
-		<h1>Social footer widget</h1>
-		<div am-socialWidget>
-			<h2>Some headline</h2>
-			<a am-inputNearTime="social" href="">
-				<div am-timeDayMonth>
-					<time datetime="9-4"><h3>04</h3><p>SEP</p></time>
-				</div>
-				<p>Some text Some text Some text Some text some text</p>	
-			</a>
-			<h2>Some headline</h2>
-			<div am-inputSubmit="subscribe"> <!--Search zone-->
-				<input am-input="subscribe" type="text" placeholder="">
-				<button am-submit="subscribe">SIGN UP</i></button>
-			</div>
-			<ul am-socialIcons>
-				<li><a href="http://instagram.com/comverse"><i class="fa fa-instagram fa-2x"></i><!--icon here--></a></li>
-				<li><a href="http://youtube.com/comverse"><i class="fa fa-youtube fa-2x"></i><!--icon here--></a></li>
-				<li><a href="http://twitter.com/comverse"><i class="fa fa-twitter fa-2x"></i><!--icon here--></a></li>
-			</ul>
-		</div>
-		
-		<h1>General information row</h1>
-		<p am-infoRow>Some text | <a href="">Some link</a></p>
 			
+			<h1>Section box</h1>
+			<div am-newsSection>
+				<h3>Some headline</h3>
+				<a am-inputNearTime="sectionBox" href="">
+					<div am-timeDayMonth>
+						<time datetime="9-4"><h3>04</h3><p>SEP</p></time>
+					</div>
+					<p>Some text Some text Some text Some text</p>	
+				</a>
+				<a href=""><i class="fa fa-search"></i>   All events</a>
+			</div>
+			
+			<h1>Success story medium box</h1>
+			<div am-success>
+				<div am-story>
+					<blockquote>Comverse has demonstrated that they are partners, not just suppliers</blockquote>
+					<div>
+						<div>
+							<cite>ADALE  KEHASSAN</cite>
+							<p>CIO</p>
+						</div>
+						<img src="images/success/multilinks.jpg" alt="" am-companyLogo>
+					</div>
+				</div>
+			</div>
+			
+			<h1>Success story large box</h1>
+			<div am-success="large">
+				<div am-story>
+					<img src="images/success/client1.png" alt="" am-clientPhoto>
+					<blockquote>BTC, a full-service provider in the Bahamas, depends on Comverse solut...</blockquote>
+					<div>
+						<div>
+							<cite>JONATHAN PIERCE</cite>	
+							<p>Group Mobile Architect</p>
+						</div>
+						<img src="images/success/btc.jpg" alt="" am-companyLogo>
+					</div>
+				</div>
+			</div>
+			
+			<h1>Success story small box</h1>
+			<div am-successSmall>
+				<img src="images/company.jpg" alt=""><!--Client company logo-->
+			</div>
+			
+			<h1>To top button</h1>
+			<a am-toTop href="#top"><i class="fa fa-angle-up"></i></a>
+			
+			<h1>Footer widget</h1>
+			<div am-footerWidget>
+				<h2>Some headline</h2>
+				<ul>
+					<li>
+						<a href="">Some link</a>
+					</li>
+					<li>
+						<a href="">Some link</a>
+					</li>
+					<li>
+						<a href="">Some link</a>
+					</li>
+				</ul>
+			</div>
+			
+			<h1>Social footer widget</h1>
+			<div am-socialWidget>
+				<h2>Some headline</h2>
+				<a am-inputNearTime="social" href="">
+					<div am-timeDayMonth>
+						<time datetime="9-4"><h3>04</h3><p>SEP</p></time>
+					</div>
+					<p>Some text Some text Some text Some text some text</p>	
+				</a>
+				<h2>Some headline</h2>
+				<div am-inputSubmit="subscribe"> <!--Search zone-->
+					<input am-input="subscribe" type="text" placeholder="">
+					<button am-submit="subscribe">SIGN UP</i></button>
+				</div>
+				<ul am-socialIcons>
+					<li><a href="http://instagram.com/comverse"><i class="fa fa-instagram fa-2x"></i><!--icon here--></a></li>
+					<li><a href="http://youtube.com/comverse"><i class="fa fa-youtube fa-2x"></i><!--icon here--></a></li>
+					<li><a href="http://twitter.com/comverse"><i class="fa fa-twitter fa-2x"></i><!--icon here--></a></li>
+				</ul>
+			</div>
+			
+			<h1>General information row</h1>
+			<p am-infoRow>Some text | <a href="">Some link</a></p>
+		</div>		
 	</body>
 </html>
 

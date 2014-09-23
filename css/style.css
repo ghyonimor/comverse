@@ -2,6 +2,24 @@
 	font-family:sans-serif;
 }
 
+[am-wrapper] {
+	background:#C0C0C0;
+	margin:0px 100px;
+	padding:20px;
+	border-radius:10px;
+	border:5px ridge #333;
+}
+
+[am-projectHeadline] {
+	text-align: center;
+	color:#333;
+	font-size: 3em;
+}
+
+[am-firstHeadline] {
+	margin-top:0;
+}
+
 h1 {
 	clear:both;
 }
@@ -192,7 +210,7 @@ a {
 /*Slider bullets*/
 [am-sliderBullets] {
 	display:inline-block;
-	position: absolute;
+	padding:0;
 }
 
 [am-sliderBullets] li{
@@ -264,6 +282,11 @@ a {
 	padding-top:50px;
 }
 
+[am-sectionHeadline~="styleguide"] {
+	padding:0;
+	text-align:left;
+}
+
 /*Icon list*/
 [am-servicesIcons] {
 	overflow:auto;
@@ -286,6 +309,38 @@ a {
 	text-align:center;
 	font-size:0.8em;
 	color:white;
+}
+
+[am-servicesIcons] li{
+	width:150px;
+}
+
+[am-servicesIcons] a {
+	overflow:auto;
+	clear:both;
+	position:relative;
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+[am-servicesIcons] img {
+	width:100%;
+	display:block;
+	margin: 0 auto;
+}
+
+[am-servicesIcons] [am-hover] {
+	display:none;
+	margin:0 auto;
+}
+
+[am-servicesIcons] li:hover img {
+	display:none;
+}
+
+[am-servicesIcons] li:hover [am-hover] {
+	display:block;
 }
 
 /*Time day-above-month*/
@@ -321,6 +376,10 @@ a {
 	padding:10px;
 	border-radius:0px;
 	display:inline-block;
+}
+
+[am-inputNearTime="styleguide"] {
+	padding:0;
 }
 
 [am-inputNearTime] > p {
