@@ -627,6 +627,13 @@ footer {
 
 	[am-timeDayMonth] h3 {
 		padding:0;
+		font-size:2em;
+		line-height:1.5em;
+		text-align:center;
+	}
+
+	[am-timeDayMonth] p {
+		padding:4px 0px;
 	}
 
 	[am-inputNearTime] > p {
@@ -1122,8 +1129,15 @@ footer {
 
 	[am-timeDayMonth] h3 {
 		padding:0;
+		font-size:2em;
+		line-height:1.5em;
+		text-align:center;
 	}
 
+	[am-timeDayMonth] p {
+		padding:4px 0px;
+	}
+	
 	[am-newsSection] {
 		height:190px;
 	}
