@@ -786,7 +786,7 @@ footer {
 		height:0;
 		overflow:hidden;
 		position: absolute;
-		transition: height 0.5s;
+		transition: height 1s;
 		z-index:100;
 		top:60px;
 	}
