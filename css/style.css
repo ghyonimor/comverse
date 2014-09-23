@@ -192,6 +192,7 @@ a {
 /*Slider bullets*/
 [am-sliderBullets] {
 	display:inline-block;
+	position: absolute;
 }
 
 [am-sliderBullets] li{
