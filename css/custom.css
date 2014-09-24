@@ -52,11 +52,6 @@ header {
 
 /*Main navigation*/
 [am-nav~="main"] > ul > li:hover > a  {
-	background:#fcfcfc;
-	color: rgb(51, 153, 204);
-	border:1px solid #D5D5D5;
-	border-bottom:0;
-	box-shadow:-5px 9px 8px rgba(0,0,0,0.4);
 	z-index:5;
 }
 
@@ -76,15 +71,6 @@ header {
 
 [am-dropdown] li a {
 	color: #585951;
-}
-
-[am-dropdown] li a:hover {
-	color:#3399cc;
-}
-
-[am-dropdown] [am-nav~="headline"], [am-dropdown] [am-nav~="headline"]:hover {
-	color:#3399cc;
-	text-decoration:underline;
 }
 
 /*Search box*/
@@ -287,10 +273,6 @@ section {
 	margin-right:15px;
 }
 
-[am-newsSection] a:nth-child(3):hover {
-	color:black;
-}
-
 /*Success stories*/
 [am-successStories] {
 	z-index:2;
@@ -318,77 +300,6 @@ section {
 	vertical-align:top;
 }
 
-[am-testimonialBox] [am-success] {
-	position: relative;
-	overflow:hidden;
-	z-index: 200;
-}
-
-[am-success] [am-story] {
-	z-index:203;
-	position:relative;
-	background:white;
-	height:210px;
-	transition: transform 0.75s;
-	overflow:hidden;
-}
-
-[am-success]:hover [am-story] {
-	transform: translateY(-212px);
-}
-
-[am-success] blockquote, [am-success] cite + p {
-	color:grey;
-}
-
-[am-success] [am-caption] {
-	position:absolute;
-	background:#3AA6DB;
-	color:white;
-	height:210px;
-	top:0;
-	left:0;
-	margin:0;
-	padding:0;
-	border:0;
-	overflow:hidden;
-	z-index: 202;
-}
-
-[am-success] [am-caption] div {
-	border:0;
-}
-
-[am-success] [am-caption] div p {
-	display:inline-block;
-	font-size:16px;
-	line-height:25px;
-	width:65%;
-}
-
-[am-success] [am-caption~="medium"] div{
-	width:204px;
-	height:190px;
-	padding:10px;
-	margin:0px;
-}
-
-[am-success]:hover [am-caption~="medium"] {
-	height:210px;
-}
-
-[am-success~="large"] [am-caption] div {
-	width:302px;
-	height:170px;
-	padding: 20px;
-	margin:0;
-	position:relative;
-}
-
-[am-success] [am-caption~="large"] div p {
-	width:75%;
-}
-
 [am-testimonialBox] [am-successSmall] {
 	margin-right:6px;
 	overflow:hidden;
@@ -408,41 +319,8 @@ section {
 	margin-right:0;
 }
 
-[am-successSmall] > img {
-	position:relative;
-	z-index:202;
-	padding:0;
-	width:107px;
-	height:94px;
-	transition: transform 0.75s
-}
-
-[am-successSmall]:hover > img {
-	transform:translateY(-107px);
-}
-
-[am-successSmall] [am-caption~="small"] {
-	overflow:hidden;
-	position:absolute;
-	z-index:201;
-}
-
-[am-successSmall] [am-caption~="small"] img{
-	width: 107px;
-	height:94px;
-	padding:0;
-}
-
 [am-layoutWrap~="successStories"] [am-blueButton] {
 	margin:20px auto;
-}
-
-[am-firstQuote] {
-	vertical-align:top;
-}
-
-[am-lastQuote] {
-	vertical-align:bottom;
 }
 
 [am-toTop] {

@@ -11,7 +11,7 @@
 	<body> 
 		<h1 am-projectHeadline>Comverse project styleguide</h1>
 		<div am-wrapper>
-			<h1 style="margin-top:0;">Main logo</h1>
+			<h1 am-firstHeadline>Main logo</h1>
 			<a href="" am-logo><img src="images/logo.png" alt="Comverse logo"></a>
 
 			<h1>Main navigation</h1>
@@ -104,7 +104,7 @@
 			</a>
 			
 			<h1>Section headline</h1>
-			<h2 style="padding:0; text-align:left;" am-sectionHeadline>Some headline</h2>
+			<h2 am-sectionHeadline="styleguide">Some headline</h2>
 			
 			<h1>Icon list</h1>
 			<ul am-servicesIcons> <!--List of icons-->
@@ -156,7 +156,7 @@
 			<div  am-timeDayMonth><time datetime="9-01"><h3>01</h3><p>SEP</p></time></div>
 			
 			<h1>input near time</h1>
-			<a am-inputNearTime href="" style="padding:0;">
+			<a am-inputNearTime="styleguide" href="">
 				<div am-timeDayMonth>
 					<time datetime="9-4"><h3>04</h3><p>SEP</p></time>
 				</div>
@@ -176,38 +176,53 @@
 			</div>
 			
 			<h1>Success story medium box</h1>
-			<div am-success>
-				<div am-story>
-					<blockquote>Comverse has demonstrated that they are partners, not just suppliers</blockquote>
-					<div>
-						<div>
-							<cite>ADALE  KEHASSAN</cite>
-							<p>CIO</p>
-						</div>
-						<img src="images/success/multilinks.jpg" alt="" am-companyLogo>
-					</div>
-				</div>
-			</div>
+			<a href="" am-success>
+								<div am-caption="medium">
+									<div>
+										<img src="images/quote-blue.png" alt="" am-firstQuote>
+										<p>Comverse has demonstrated that they are partners, not just suppliers</p>
+										<img src="images/quote-blue.png" alt="" am-lastQuote>
+									</div>
+								</div>
+								<div am-story>
+									<blockquote>Comverse has demonstrated that they are partners, not just suppliers</blockquote>
+									<div>
+										<div>
+											<cite>ADALE  KEHASSAN</cite>
+											<p>CIO</p>
+										</div>
+										<img src="images/success/multilinks.jpg" alt="" am-companyLogo>
+									</div>
+								</div>
+							</a>
 			
 			<h1>Success story large box</h1>
-			<div am-success="large">
-				<div am-story>
-					<img src="images/success/client1.png" alt="" am-clientPhoto>
-					<blockquote>BTC, a full-service provider in the Bahamas, depends on Comverse solut...</blockquote>
-					<div>
-						<div>
-							<cite>JONATHAN PIERCE</cite>	
-							<p>Group Mobile Architect</p>
-						</div>
-						<img src="images/success/btc.jpg" alt="" am-companyLogo>
-					</div>
-				</div>
-			</div>
+			<a href="" am-success="large">
+								<div am-caption="large">
+									<div>
+										<img src="images/quote-blue.png" alt="" am-firstQuote>
+										<p>BTC, a full-service provider in the Bahamas, depends on Comverse solutions for real time BSS,voice services, SMS, MMS and data management and monetization.</p>
+										<img src="images/quote-blue.png" alt="" am-lastQuote>
+									</div>
+								</div>
+								<div am-story>
+									<img src="images/success/client1.png" alt="" am-clientPhoto>
+									<blockquote>BTC, a full-service provider in the Bahamas, depends on Comverse solut...</blockquote>
+									<div>
+										<div>
+											<cite>JONATHAN PIERCE</cite>
+											<p>Group Mobile Architect</p>
+										</div>
+										<img src="images/success/btc.jpg" alt="" am-companyLogo>
+									</div>
+								</div>
+							</a>
 			
 			<h1>Success story small box</h1>
-			<div am-successSmall>
-				<img src="images/company.jpg" alt=""><!--Client company logo-->
-			</div>
+			<a href="" am-successSmall>
+								<div am-caption="small"><img src="images/success/hover.jpg" alt=""></div>
+								<img src="images/success/mtc.jpg" alt="">
+							</a>
 			
 			<h1>To top button</h1>
 			<a am-toTop href="#top"><i class="fa fa-angle-up"></i></a>
