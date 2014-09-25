@@ -188,38 +188,6 @@ section {
 	padding-bottom:50px;
 }
 
-[am-servicesIcons] li{
-	width:150px;
-}
-
-[am-servicesIcons] a {
-	overflow:auto;
-	clear:both;
-	position:relative;
-	display:block;
-	width:100%;
-	height:100%;
-}
-
-[am-servicesIcons] img {
-	width:100%;
-	display:block;
-	margin: 0 auto;
-}
-
-[am-servicesIcons] [am-hover] {
-	display:none;
-	margin:0 auto;
-}
-
-[am-servicesIcons] li:hover img {
-	display:none;
-}
-
-[am-servicesIcons] li:hover [am-hover] {
-	display:block;
-}
-
 [am-blueButton~="services"] {
 	text-align: center;
 	margin:0 auto;
@@ -407,9 +375,13 @@ TABLET STYLES
 	}
 
 	/*Navigation*/
+	[am-nav~="main"] > ul {
+		margin-left:30px;
+	}
+
 	[am-nav~="main"] > ul > li > a {
 		padding: 10px 5px 20px 5px;
-		font-size:12px;
+		font-size:11px;
 	}
 
 	[am-dropdown] div:first-child {
@@ -478,6 +450,10 @@ TABLET STYLES
 
 	[am-servicesIcons] li {
 		width:110px;
+	}
+
+	[am-servicesIcons] img {
+		height:50px;
 	}
 
 	/*Solutions*/
@@ -708,12 +684,12 @@ MOBILE STYLES
 	}
 
 	#menu:checked + ul {
-		height:1200px;
+		height:1100px;
 		background:transparent;
 	}
 
 	#search:checked + [am-inputSubmit~="search"] {
-		height:42px;
+		height:45px;
 	}
 
 	/*Wrap navigation and search box*/
@@ -787,7 +763,6 @@ MOBILE STYLES
 
 	[am-nav~="main"] > ul > li > [am-dropdown], [am-nav~="main"] > ul > li:hover [am-dropdown] {
 		position:absolute;
-		top:45px;
 		left:-1px;
 		width:100%;
 		padding:0;
@@ -817,6 +792,8 @@ MOBILE STYLES
 		width:100%;
 		margin:0;
 		border:0;
+		padding:0px;
+		border-bottom:0px!important;
 	}
 
 	[am-dropdown] ul li {
@@ -853,13 +830,14 @@ MOBILE STYLES
 		border-radius:0;
 		z-index:200;
 		top:61px;
+		left:0;
 	}
 
 	[am-input~="search"] {
 		width:100%;
 		border:1px solid lightgrey;
 		border-radius:5px;
-		height:20px;
+		height:25px;
 		width:96%;
 		margin:10px 2%;
 	}
@@ -960,6 +938,7 @@ MOBILE STYLES
 
 	[am-servicesIcons] li img {
 		max-width:150px;
+		height:60px;
 	}
 
 	[am-blueButton~="services"] {
@@ -1166,6 +1145,7 @@ MOBILE STYLES
 		color:white;
 	}
 }
+
 
 
 
