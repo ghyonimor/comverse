@@ -1,0 +1,41 @@
+* {
+  font-family: sans-serif;
+  outline: none;
+}
+
+#jsEnabled {
+  display:none;
+}
+
+input {
+  border:1px solid lightgrey;
+}
+
+input[type="submit"] {
+  cursor:pointer;
+}
+
+.formComponent {
+  margin-bottom:10px;
+}
+
+span {
+  font-size:12px;
+}
+
+.invalid {
+  border: 1px solid red;
+}
+
+.error {
+  display:block;
+  color: red;
+}
+
+section {
+  overflow: auto;
+}
+
+.formComponent label, .formComponent input {
+  display:block;
+}
