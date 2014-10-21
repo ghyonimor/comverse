@@ -1,22 +1,145 @@
 * {
   font-family: sans-serif;
   outline: none;
+  color:rgb(88, 89, 81);
 }
 
 #jsEnabled {
   display:none;
+  vertical-align: top;
+}
+
+#jsDisabled {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#accessibleForm {
+  display:inline-block;
+  vertical-align: top;
+  width:400px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+[am-sideNav] {
+  display: inline-block;
+  vertical-align: top;
+  width:220px;
+}
+
+[am-contact] {
+  display: inline-block;
+  vertical-align: top;
+}
+
+[am-direct] {
+  display:inline-block;
+  vertical-align: top;
+}
+
+[am-contactHeader] {
+  font-size: 40px;
+  margin:0px
+}
+
+[am-contactPar] {
+  margin:5px;
+}
+
+[am-sideNav] ul {
+  margin:0;
+}
+
+[am-sideNav] ul li {
+  height:40px;
+  line-height: 40px;
+  width:160px;
+  border-bottom: 1px solid #D5D5D5;
+  cursor:pointer;
+}
+
+[am-sideNav] ul li a{
+  display:block;
+}
+
+[am-directList] a {
+  display:block;
+  color:white;
+  padding:25px;
+  height:50px;
+}
+
+[am-directList] a h2 {
+  color: white;
+  margin:0;
+  margin-top:3px;
+  font-size:16px;
+}
+
+[am-directList] a p {
+  color: white;
+  margin-top:11px;
+}
+
+[am-sideNav] ul li:hover a {
+  color: rgb(51, 153, 204);
+}
+
+[am-layoutWrap~="formSection"] {
+  margin-top:50px;
+}
+
+[am-directList] li{
+  height:100px;
+  width:250px;
+  margin:20px 0px;
+  border-radius:5px;
+  color:white;
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3299cc), color-stop(1, #1486c1) );
+  border:none;
+  box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+}
+
+[am-directList] li:hover {
+  background:linear-gradient(to bottom, #40a2d5 0%, #289ad2 100%);
+}
+
+input,textarea{
+  border:1px solid #D5D5D5;
+  width:300px;
+  border-radius:3px;
 }
 
 input {
-  border:1px solid lightgrey;
+  height:30px;
 }
 
 input[type="submit"] {
   cursor:pointer;
+  width:100px;
+  line-height: 14px;
+  height:35px;
+  color:white;
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3299cc), color-stop(1, #1486c1) );
+  border:none;
+  box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+}
+
+input[type="submit"]:hover {
+  background:linear-gradient(to bottom, #40a2d5 0%, #289ad2 100%);
 }
 
 .formComponent {
   margin-bottom:10px;
+  height:65px;
+}
+
+.message {
+  height:190px;
 }
 
 span {

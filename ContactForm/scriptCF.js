@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() { 
   // this function runs when the DOM is ready, i.e. when the document has been parsed
-  document.getElementById("jsEnabled").style.display = "block";
+  document.getElementById("jsEnabled").style.display = "inline-block";
   //Form submittion validation.
   var submit = document.querySelector('input[type="submit"]');
   submit.addEventListener("click", validate);

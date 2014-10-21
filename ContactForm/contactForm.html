@@ -158,66 +158,99 @@
 		<div am-main> <!--Wraps all sections except header and footer-->
 			<section am-formSection>
 				<div am-layoutWrap="formSection">
-					<!--When JS is enabled-->
-					<div id="jsEnabled">
-					  <h1 tabindex="1">GET IN TOUCH</h1>
-					  <form id="AccessibleForm">
-					    <div class="formComponent">
-					      <label for="name">Full Name</label>
-					      <input type="text" id="name" am-required="empty" aria-required=”true”>
-					    </div>
-					    <div class="formComponent">
-					      <label for="email">E-mail:</label>
-					      <input type="email" id="email" am-required="intype empty" aria-required=”true”>
-					    </div>
-					    <div class="formComponent">
-					      <label for="company">Company:</label>
-					      <input type="text" id="company" am-required="empty" aria-required=”true”>
-					    </div>
-					    <div class="formComponent">
-					      <label for="phone">Phone: <span>(optional)</span></label>
-					      <input type="text" id="phone" am-required="intype">
-					    </div>
-					    <div class="formComponent">
-					      <label for="message">How can we help?</label>
-					      <textarea rows="7" cols="22" id="message" am-required="empty" aria-required=”true”></textarea>
-					    </div>
-					    <div class="formComponent">
-					      <input type="submit" value="SEND">
-					    </div>
-					  </form>
-					</div>
+					<nav am-sideNav>
+						<ul>
+							<li><a href="">OVERVIEW</a></li>
+							<li><a href="">TIMELINE</a></li>
+							<li><a href="">VALUES</a></li>
+							<li><a href="">MANAGAMENT</a></li>
+							<li><a href="">INVESTORS</a></li>
+							<li><a href="">CUSTOMERS</a></li>
+							<li><a href="">PARTNERS</a></li>
+							<li><a href="">CAREERS</a></li>
+							<li><a href="">CONTACT US</a></li>
+						</ul>
+					</nav>
+					<div am-contact>
+						<h1 am-contactHeader>CONTACT US</h1>
+						<p am-ContactPar>SHARE YOUR THOUGHTS, IDEAS ABOUT FUTURE PROJECTS OR JUST SAY HI</p>
+						<!--When JS is enabled-->
+						<div id="jsEnabled">
+							<h1 am-formHeadline tabindex="1">GET IN TOUCH</h1>
+							<form id="AccessibleForm">
+							  	
+								    <div class="formComponent">
+								      <label for="name">Full Name:</label>
+								      <input type="text" id="name" am-required="empty" aria-required=”true”>
+								    </div>
+								    <div class="formComponent">
+								      <label for="email">E-mail:</label>
+								      <input type="email" id="email" am-required="intype empty" aria-required=”true”>
+								    </div>
+								    <div class="formComponent">
+								      <label for="company">Company:</label>
+								      <input type="text" id="company" am-required="empty" aria-required=”true”>
+								    </div>
+								    <div class="formComponent">
+								      <label for="phone">Phone: <span>(optional)</span></label>
+								      <input type="text" id="phone" am-required="intype">
+								    </div>
+								
+								    <div class="formComponent message">
+								      <label for="message">How can we help?</label>
+								      <textarea rows="10" cols="22" id="message" am-required="empty" aria-required=”true”></textarea>
+								    </div>
+								    <div class="formComponent">
+								      <input type="submit" value="SEND     ▶">
+								    </div>
+								
+							</form>
+						</div>
 
-					<!--When JS is disabled-->
-					<noscript>
-					  <h1 tabindex="1">GET IN TOUCH</h1>
-					  <form id="AccessibleForm">
-					    <div class="formComponent">
-					      <label for="name">Full Name</label>
-					      <input type="text" id="name" required aria-required=”true”>
-					    </div>
-					    <div class="formComponent">
-					      <label for="email">E-mail:</label>
-					      <input type="email" id="email" required aria-required=”true”>
-					    </div>
-					    <div class="formComponent">
-					      <label for="company">Company:</label>
-					      <input type="text" id="company" required aria-required=”true”>
-					    </div>
-					    <div class="formComponent">
-					      <label for="phone">Phone: <span>(optional)</span></label>
-					      <input type="text" id="phone">
-					    </div>
-					    <div class="formComponent">
-					      <label for="message">How can we help?</label>
-					      <textarea rows="7" cols="22" id="message" required aria-required=”true”></textarea>
-					    </div>
-					    <div class="formComponent">
-					      <input type="submit" value="SEND">
-					    </div>
-					  </form>
-					</noscript>
-				</div>
+						<!--When JS is disabled-->
+						<noscript>
+							<div id="jsDisabled">
+							 	<h1 am-formHeadline tabindex="1">GET IN TOUCH</h1>
+								<form id="AccessibleForm" action="submit-and-redirect-thankyou.php">
+									
+									    <div class="formComponent">
+									      <label for="name">Full Name:</label>
+									      <input type="text" id="name" required aria-required=”true”>
+									    </div>
+									    <div class="formComponent">
+									      <label for="email">E-mail:</label>
+									      <input type="email" id="email" required aria-required=”true”>
+									    </div>
+									    <div class="formComponent">
+									      <label for="company">Company:</label>
+									      <input type="text" id="company" required aria-required=”true”>
+									    </div>
+									    <div class="formComponent">
+									      <label for="phone">Phone: <span>(optional)</span></label>
+									      <input type="text" id="phone">
+									    </div>
+									
+									    <div class="formComponent message">
+									      <label for="message">How can we help?</label>
+									      <textarea rows="10" cols="22" id="message" required aria-required=”true”></textarea>
+									    </div>
+									    <div class="formComponent">
+									      <input type="submit" value="SEND     ▶">
+									    </div>
+									
+						  		</form>
+						  	</div>
+						</noscript>
+						<div am-direct>
+							<h1 am-directHeadline>DIRECT CONTACT</h1>
+							<ul am-directList>
+								<li><a href=""><h2>Industry Media Relations</h2><p>PaulBaker@comverse.com</p></a></li>
+								<li><a href=""><h2>Industry Media Relations</h2><p>PaulBaker@comverse.com</p></a></li>
+								<li><a href=""><h2>Industry Media Relations</h2><p>PaulBaker@comverse.com</p></a></li>
+								<li><a href=""><h2>Industry Media Relations</h2><p>PaulBaker@comverse.com</p></a></li>
+							</ul>
+						</div>
+					</div>
 			</section>
 			<section am-directSection>
 
