@@ -158,6 +158,7 @@
 		<div am-main> <!--Wraps all sections except header and footer-->
 			<section am-formSection>
 				<div am-layoutWrap="formSection">
+					<!--Side navigation-->
 					<nav am-sideNav>
 						<ul>
 							<li><a href="">OVERVIEW</a></li>
@@ -171,15 +172,16 @@
 							<li><a href="">CONTACT US</a></li>
 						</ul>
 					</nav>
+					<!--Contacts area-->
 					<div am-contact>
 						<h1 am-contactHeader>CONTACT US</h1>
 						<p am-ContactPar>SHARE YOUR THOUGHTS, IDEAS ABOUT FUTURE PROJECTS OR JUST SAY HI</p>
-						<!--When JS is enabled-->
+						<!--Contact form when JS is enabled-->
 						<div id="jsEnabled">
 							<h1 am-formHeadline tabindex="1">GET IN TOUCH</h1>
 							<form id="AccessibleForm">
 							  	
-								    <div class="formComponent">
+									<div class="formComponent">
 								      <label for="name">Full Name:</label>
 								      <input type="text" id="name" am-required="empty" aria-required=”true”>
 								    </div>
@@ -207,7 +209,7 @@
 							</form>
 						</div>
 
-						<!--When JS is disabled-->
+						<!--Contact form when JS is disabled-->
 						<noscript>
 							<div id="jsDisabled">
 							 	<h1 am-formHeadline tabindex="1">GET IN TOUCH</h1>
@@ -241,6 +243,7 @@
 						  		</form>
 						  	</div>
 						</noscript>
+						<!--Direct contacts area-->
 						<div am-direct>
 							<h1 am-directHeadline>DIRECT CONTACT</h1>
 							<ul am-directList>
