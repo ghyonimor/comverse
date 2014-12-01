@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-	
+
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -11,9 +11,9 @@
 		<![endif]-->
 		<title>Comverse Homepage</title>
 	</head>
-	
+
 	<!--am-layoutWrap="x" elements are to determine specific layout width. -->
-	
+
 	<body>
 		<div am-placeholder></div>
 		<header> <!--Header contains logo, main dropdown navigation, site search, language menu and customer login.-->
@@ -24,7 +24,7 @@
 			<div am-wrapNavAndSearch>
 				<nav am-nav="main"> <!--Main dropdown navigation.-->
 					<input type="checkbox" id="menu">
-					<ul> 
+					<ul>
 						<li>
 							<a href="">YOUR NEEDS</a>
 							<label for="needs"></label>
@@ -133,7 +133,7 @@
 									<a href=""><img src="images/dropdown4.jpg" alt="dropdown image"></a>
 								</div>
 							</div>
-						</li>		
+						</li>
 					</ul>
 				</nav>
 				<input type="checkbox" id="search">
@@ -154,111 +154,81 @@
 				<a href="" am-login>Customer login</a> <!--customer login-->
 			</div>
 		</header>
-		
+
 		<div am-main> <!--Wraps all sections except header and footer-->
 			<section am-slider> <!--Slider section-->
 				<div am-layoutWrap="main slider"> <!--Slider section content wrap-->
-					<ol am-sliderBullets>
-						<li am-marked><a href="">1</a></li>
-						<li><a href="">2</a></li>
-						<li><a href="">3</a></li>
-						<li><a href="">4</a></li>
-						<li><a href="">5</a></li>
-					</ol>
+					<div am-layoutWrapDesktop>
+						<ol am-sliderBullets>
+							<li am-marked><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+						</ol>
+					</div>
 					<div am-wrapSlideContent="1"> <!--Wraps slider headline, paragraph, CTA and bullets. Each slide is marked by a number.-->
-						<h1 am-sliderHeadline>DIGITAL SERVICES</h1>
-						<a am-blueButton="slide1" href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
+						<div am-layoutWrapDesktop>
+							<h1 am-sliderHeadline>DIGITAL SERVICES</h1>
+							<a am-blueButton="slide1" href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
+						</div>
 					</div>
-					
-					<!-- Slides' 2-5 headline boxes are commented out at this point.-->
-					<!--
-					<div am-wrapSlideContent="2"> 
-						<h1 am-sliderHeadline>CREATE A SUPERIOR CUSTOMER EXPERIENCE</h1>
-						<ul am-sliderParagraph>
-							<li>Personalized Plans and Offerings, Smart Customer Interactions</li>
-							<li>Comprehensive Self-Service and Account Control</li>
-							<li>Personalized Social Media Interactions and more</li>
-						</ul>
-						<a am-blueButton href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
-						<ol am-sliderBullets>
-							<li><a href="">1</a></li>
-							<li am-marked><a href="">2</a></li>
-							<li><a href="">3</a></li>
-							<li><a href="">4</a></li>
-							<li><a href="">5</a></li>
-						</ol>
+
+					<div am-wrapSlideContent="2">
+						<div am-layoutWrapDesktop>
+							<h1 am-sliderHeadline>CREATE A SUPERIOR CUSTOMER EXPERIENCE</h1>
+							<ul am-sliderParagraph>
+								<li>Personalized Plans and Offerings, Smart Customer Interactions</li>
+								<li>Comprehensive Self-Service and Account Control</li>
+								<li>Personalized Social Media Interactions and more</li>
+							</ul>
+							<a am-blueButton href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
+						</div>
 					</div>
-					
+
 					<div am-wrapSlideContent="3">
-						<h1 am-sliderHeadline>Evolve to IP/4G</h1>
-						<ul am-sliderParagraph>
-							<li>3G/4G Service Evolution</li>
-							<li>Rich Communication Services (RCS)</li>
-							<li>Service and Device-Aware Charging</li>
-						</ul>
-						<a am-blueButton href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
-						<ol am-sliderBullets>
-							<li><a href="">1</a></li>
-							<li><a href="">2</a></li>
-							<li am-marked><a href="">3</a></li>
-							<li><a href="">4</a></li>
-							<li><a href="">5</a></li>
-						</ol>
+						<div am-layoutWrapDesktop>
+							<h1 am-sliderHeadline>Evolve to IP/4G</h1>
+							<ul am-sliderParagraph>
+								<li>3G/4G Service Evolution</li>
+								<li>Rich Communication Services (RCS)</li>
+								<li>Service and Device-Aware Charging</li>
+							</ul>
+							<a am-blueButton href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
+						</div>
 					</div>
-					
+
 					<div am-wrapSlideContent="4">
-						<h1 am-sliderHeadline>Smartly Monetize New Business Models</h1>
-						<ul am-sliderParagraph>
-							<li>Smart Data Monetization & Analytics</li>
-							<li>M2M & Cloud</li>
-							<li>Customer Aware Policy</li>
-						</ul>
-						<a am-blueButton href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
-						<ol am-sliderBullets>
-							<li><a href="">1</a></li>
-							<li><a href="">2</a></li>
-							<li><a href="">3</a></li>
-							<li am-marked><a href="">4</a></li>
-							<li><a href="">5</a></li>
-						</ol>
+						<div am-layoutWrapDesktop>
+							<h1 am-sliderHeadline>Smartly Monetize New Business Models</h1>
+							<ul am-sliderParagraph>
+								<li>Smart Data Monetization & Analytics</li>
+								<li>M2M & Cloud</li>
+								<li>Customer Aware Policy</li>
+							</ul>
+							<a am-blueButton href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
+						</div>
 					</div>
-					
-					
-					<div am-wrapSlideContent="5"> 
-						<h1 am-sliderHeadline>Optimize for Efficiency</h1>
-						<ul am-sliderParagraph>
-							<li>System Modernization & Consolidation</li>
-							<li>Virtualization & Cloud / SaaS</li>
-							<li>Managed Services</li>
-						</ul>
-						<a am-blueButton href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
-						<ol am-sliderBullets>
-							<li><a href="">1</a></li>
-							<li><a href="">2</a></li>
-							<li><a href="">3</a></li>
-							<li><a href="">4</a></li>
-							<li am-marked><a href="">5</a></li>
-						</ol>
-					</div>
-					-->
-					
+
 					<div am-wrapSliderBoxes> <!--Wraps 3 fixed slider boxes-->
-						<a am-sliderBox="1" href="">
-							<h2>Comverse Is Value-Added Service Global Market Leader.</h2>
-							<p><i class="fa fa-link"></i>Read More</p>
-						</a>
-						<a am-sliderBox="2" href="">
-							<h2>Managed Services World Congress <time datetime="9-18/19">September 18-19</time> Berlin, Germany</h2>
-							<p><i class="fa fa-file-text-o"></i>Read More</p>
-						</a>
-						<a am-sliderBox="3" href="">
-							<h2>Comverse: Enabling a World of Connected Possibilities</h2>
-							<p><i class="fa fa-play-circle-o"></i>Watch Now</p>
-						</a>
+						<div am-layoutWrapDesktop>
+							<a am-sliderBox="1" href="">
+								<h2>Comverse Is Value-Added Service Global Market Leader.</h2>
+								<p><i class="fa fa-link"></i>Read More</p>
+							</a>
+							<a am-sliderBox="2" href="">
+								<h2>Managed Services World Congress <time datetime="9-18/19">September 18-19</time> Berlin, Germany</h2>
+								<p><i class="fa fa-file-text-o"></i>Read More</p>
+							</a>
+							<a am-sliderBox="3" href="">
+								<h2>Comverse: Enabling a World of Connected Possibilities</h2>
+								<p><i class="fa fa-play-circle-o"></i>Watch Now</p>
+							</a>
+						</div>
 					</div>
 				</div>
 			</section>
-			
+
 			<section am-services> <!--Services section-->
 				<div am-layoutWrap="services">
 					<h2 am-sectionHeadline>WHAT CAN WE DO FOR YOU?</h2>
@@ -309,7 +279,7 @@
 					<a am-blueButton="services" href="">See all solutions<span><i class="fa fa-caret-right"></i></span></a>
 				</div>
 			</section>
-			
+
 			<section am-solutions> <!--Solutions section-->
 				<div am-layoutWrap="solutions">
 					<h2 am-sectionHeadline>SOLUTIONS FOR</h2>
@@ -321,7 +291,7 @@
 					</ul>
 				</div>
 			</section>
-			
+
 			<section am-news> <!--News section-->
 				<div am-layoutWrap="news">
 					<h2 am-sectionHeadline>WHAT'S HAPPENING AT COMVERSE?</h2>
@@ -332,7 +302,7 @@
 								<div am-timeDayMonth>
 									<time datetime="8-29"><h3>29</h3><p>AUG</p></time>
 								</div>
-								<p>Creating a Compelling Carrier Comeback Solution</p>	
+								<p>Creating a Compelling Carrier Comeback Solution</p>
 							</a>
 							<a href=""><i class="fa fa-newspaper-o"></i>   All News</a>
 						</section>
@@ -342,7 +312,7 @@
 								<div am-timeDayMonth>
 									<time datetime="9-16"><h3>16</h3><p>SEP</p></time>
 								</div>
-								<p>Managed Services World Congress 2014: The Growing Trend for Outsourcing IT</p>	
+								<p>Managed Services World Congress 2014: The Growing Trend for Outsourcing IT</p>
 							</a>
 							<a href=""><i class="fa fa-calendar"></i>   All Events</a>
 						</section>
@@ -352,14 +322,14 @@
 								<div am-timeDayMonth>
 									<time datetime="9-4"><h3>09</h3><p>SEP</p></time>
 								</div>
-								<p>Comverse Announces Fiscal 2014 Second Quarter Results; Conference Call to be Held Today at 8:00 AM</p>	
+								<p>Comverse Announces Fiscal 2014 Second Quarter Results; Conference Call to be Held Today at 8:00 AM</p>
 							</a>
 							<a href=""><i class="fa fa-comment-o"></i>  All Press Releases</a>
 						</section>
 					</div>
 				</div>
 			</section>
-			
+
 			<section am-successStories>
 				<div am-layoutWrap="successStories">
 					<h2 am-sectionHeadline="testimonials">SUCCESS STORIES</h2>
@@ -467,7 +437,7 @@
 				</div>
 			</section>
 		</div>
-			
+
 		<footer> <!--Footer contains 3 widgets (which are used for site navigation), a social widget and some general information.-->
 			<div am-layoutWrap="footer">
 				<ul am-footerWidgetList> <!--Wraps 3 widgets. Is a list because it matches main navigation.-->
@@ -562,7 +532,7 @@
 						<div am-timeDayMonth>
 							<time datetime="9-9"><h3>09</h3><p>SEP</p></time>
 						</div>
-						<p>Comverse Announces Fiscal 2014 Second Quarter Results; Conference Call to be Held Today at 8:00 AM</p>	
+						<p>Comverse Announces Fiscal 2014 Second Quarter Results; Conference Call to be Held Today at 8:00 AM</p>
 					</a>
 					<h2>SUBSCRIBE TO COMVERSE</h2>
 					<div am-inputSubmit="subscribe"> <!--Site subscription-->
@@ -603,10 +573,10 @@
 			</div>
 		</footer>
 	</body>
-					
-				
-				
-	
+
+
+
+
 
 
 
