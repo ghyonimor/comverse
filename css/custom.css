@@ -151,6 +151,7 @@ section {
 	display:inline-block;
 	position: absolute;
 	margin-top:270px;
+	z-index: 7;
 }
 
 [am-sliderBullets] a {
@@ -165,7 +166,7 @@ section {
 [am-wrapSliderBoxes] {
 	margin-left: 0px;
 	margin-top:190px;
-	padding-bottom:40px;
+	padding-bottom:20px;
 }
 
 [am-sliderBox] {
@@ -386,11 +387,20 @@ DESKTOP STYLES
 
 @media all and (min-width: 1004px) {
 
-	[am-wrapSlideContent] {
-		height: 500px;
+	[am-slider] {
+		height: 560px;
+		position: relative;
+	}
+
+	[am-layoutWrap~="slider"] {
+		height: 100%;
 	}
 
 	[am-wrapSlideContent] {
+		box-sizing: border-box;
+		position: absolute;
+		top: 0;
+		height: 100%;
 		display: none;
 	}
 
