@@ -388,20 +388,42 @@ DESKTOP STYLES
 @media all and (min-width: 1004px) {
 
 	[am-slider] {
-		height: 570px;
+		height: 560px;
+		position: relative;
+		overflow: hidden;
 	}
 
 	[am-layoutWrap~="slider"] {
+		left: 0%;
 		height: 100%;
-	}
-
-	[am-wrapSlideContent] {
-		height: 100%;
+		width: 400%;
 		position: absolute;
+		transition: left 0.5s;
 	}
 
 	[am-wrapSlideContent] {
-		display: none;
+		box-sizing: border-box;
+		top: 0;
+		width: 25%;
+		height: 100%;
+		display: block;
+		float:left;
+	}
+
+	[am-wrapSlideContent~="1"] {
+
+	}
+
+	[am-wrapSlideContent~="2"] {
+
+	}
+
+	[am-wrapSlideContent~="3"] {
+
+	}
+
+	[am-wrapSlideContent~="4"] {
+
 	}
 
 	[am-layoutWrapDesktop] {
@@ -409,6 +431,10 @@ DESKTOP STYLES
 		margin:0 auto;
 		position: relative;
 		padding:0;
+	}
+
+	[am-sliderBullets] {
+
 	}
 
 	[am-wrapSliderBoxes] {

@@ -12,13 +12,11 @@ var getActivatedIndex = function(links) {
 };
 
 var displaySlide = function() {
+	var slider = document.querySelector('[am-layoutWrap~="slider"');
 	var slides = document.querySelectorAll('[am-wrapSlideContent]');
 	for (var i = 0; i < slides.length; i++) {
 		if (i === getActivatedIndex(links)) {
-			slides[i].style.display = 'block';
-		}
-		else {
-			slides[i].style.display = 'none';
+			slider.style.left = i * (-100) + '%';
 		}
 	}
 };

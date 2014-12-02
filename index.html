@@ -158,14 +158,7 @@
 		<div am-main> <!--Wraps all sections except header and footer-->
 			<section am-slider> <!--Slider section-->
 				<div am-layoutWrap="main slider"> <!--Slider section content wrap-->
-					<div am-layoutWrapDesktop>
-						<ol am-sliderBullets>
-							<li><a am-marked>1</a></li>
-							<li><a>2</a></li>
-							<li><a>3</a></li>
-							<li><a>4</a></li>
-						</ol>
-					</div>
+
 					<div am-wrapSlideContent="1" class="active-slide"> <!--Wraps slider headline, paragraph, CTA and bullets. Each slide is marked by a number.-->
 						<div am-layoutWrapDesktop>
 							<h1 am-sliderHeadline>DIGITAL SERVICES</h1>
@@ -208,22 +201,29 @@
 							<a am-blueButton href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
 						</div>
 					</div>
-
-					<div am-wrapSliderBoxes> <!--Wraps 3 fixed slider boxes-->
-						<div am-layoutWrapDesktop>
-							<a am-sliderBox="1" href="">
-								<h2>Comverse Is Value-Added Service Global Market Leader.</h2>
-								<p><i class="fa fa-link"></i>Read More</p>
-							</a>
-							<a am-sliderBox="2" href="">
-								<h2>Managed Services World Congress <time datetime="9-18/19">September 18-19</time> Berlin, Germany</h2>
-								<p><i class="fa fa-file-text-o"></i>Read More</p>
-							</a>
-							<a am-sliderBox="3" href="">
-								<h2>Comverse: Enabling a World of Connected Possibilities</h2>
-								<p><i class="fa fa-play-circle-o"></i>Watch Now</p>
-							</a>
-						</div>
+				</div>
+				<div am-layoutWrapDesktop>
+					<ol am-sliderBullets>
+						<li><a am-marked>1</a></li>
+						<li><a>2</a></li>
+						<li><a>3</a></li>
+						<li><a>4</a></li>
+					</ol>
+				</div>
+				<div am-wrapSliderBoxes> <!--Wraps 3 fixed slider boxes-->
+					<div am-layoutWrapDesktop>
+						<a am-sliderBox="1" href="">
+							<h2>Comverse Is Value-Added Service Global Market Leader.</h2>
+							<p><i class="fa fa-link"></i>Read More</p>
+						</a>
+						<a am-sliderBox="2" href="">
+							<h2>Managed Services World Congress <time datetime="9-18/19">September 18-19</time> Berlin, Germany</h2>
+							<p><i class="fa fa-file-text-o"></i>Read More</p>
+						</a>
+						<a am-sliderBox="3" href="">
+							<h2>Comverse: Enabling a World of Connected Possibilities</h2>
+							<p><i class="fa fa-play-circle-o"></i>Watch Now</p>
+						</a>
 					</div>
 				</div>
 			</section>
