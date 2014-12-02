@@ -157,7 +157,11 @@ section {
 	margin-top:250px;
 }
 
-[am-sliderBullets] [am-marked] a{
+[am-sliderBullets] a {
+	cursor: pointer;
+}
+
+[am-sliderBullets] [am-marked]{
 	background: #3399cc;
 	color:white;
 }
@@ -390,7 +394,7 @@ DESKTOP STYLES
 		height: 500px;
 	}
 
-	[am-wrapSlideContent~="2"], [am-wrapSlideContent~="3"], [am-wrapSlideContent~="4"] {
+	[am-wrapSlideContent] {
 		display: none;
 	}
 

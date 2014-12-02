@@ -160,14 +160,13 @@
 				<div am-layoutWrap="main slider"> <!--Slider section content wrap-->
 					<div am-layoutWrapDesktop>
 						<ol am-sliderBullets>
-							<li am-marked><a href="">1</a></li>
-							<li><a href="">2</a></li>
-							<li><a href="">3</a></li>
-							<li><a href="">4</a></li>
-							<li><a href="">5</a></li>
+							<li><a am-marked>1</a></li>
+							<li><a>2</a></li>
+							<li><a>3</a></li>
+							<li><a>4</a></li>
 						</ol>
 					</div>
-					<div am-wrapSlideContent="1"> <!--Wraps slider headline, paragraph, CTA and bullets. Each slide is marked by a number.-->
+					<div am-wrapSlideContent="1" class="active-slide"> <!--Wraps slider headline, paragraph, CTA and bullets. Each slide is marked by a number.-->
 						<div am-layoutWrapDesktop>
 							<h1 am-sliderHeadline>DIGITAL SERVICES</h1>
 							<a am-blueButton="slide1" href="">Learn More<span><i class="fa fa-caret-right"></i></span></a>
@@ -573,6 +572,8 @@
 			</div>
 		</footer>
 	</body>
+	<script src="js/main.js"></script>
+</html>
 
 
 
