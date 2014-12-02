@@ -523,6 +523,7 @@ TABLET STYLES
 
 	[am-sliderHeadline] {
 		margin-left: 20px;
+		font-size: 2em;
 	}
 
 	[am-sliderParagraph] {
