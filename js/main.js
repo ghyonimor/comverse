@@ -13,14 +13,12 @@ var getActivatedIndex = function(links) {
 
 var displaySlide = function() {
 	var slides = document.querySelectorAll('[am-wrapSlideContent]');
-	for (var i = 0; i < slides.length; i++) {
-		if (i === getActivatedIndex(links)) {
-			slider.style.left = i * (-100) + '%';
-		}
-	}
+	var i = getActivatedIndex(links);
+	slider.style.left = i * (-100) + '%';
 };
 
 var changeSlide = function(e) {
+	slider.style.transition = "left 0.5s";
 	e.preventDefault();
 	var target = e.target;
 	target.setAttribute('am-marked', '');
@@ -32,6 +30,7 @@ var changeSlide = function(e) {
 	displaySlide();
 	clearInterval(timer);
 	timer = setInterval(function(){
+		slider.style.transition = "left 0.5s";
     	active = getActivatedIndex(links);
     	if (active < 3) {
 		    active = active + 1;
@@ -46,6 +45,7 @@ var changeSlide = function(e) {
 var hammertime = new Hammer(slider);
 
 var mqLaunch = function(mq) {
+
 	if (mq.matches) {
 		/* the view port is at least 1004 pixels wide */
 		console.log('viewport 1004+');
@@ -100,12 +100,9 @@ var mqLaunch = function(mq) {
 	}
 	else {
 		slider.style.left = '0%';
+		slider.style.transition = "none";
 		// The viewport is less than 1004px wide.
 		console.log('viewport 1004-');
-		var slides = document.querySelectorAll('[am-wrapSlideContent]');
-		for (var j = 0; j < slides.length; j++) {
-			slides[j].style.display = 'block';
-		}
 		hammertime.off('swiperight');
 		hammertime.off('swipeleft');
 		clearInterval(timer);

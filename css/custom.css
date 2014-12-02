@@ -410,22 +410,6 @@ DESKTOP STYLES
 		float:left;
 	}
 
-	[am-wrapSlideContent~="1"] {
-
-	}
-
-	[am-wrapSlideContent~="2"] {
-
-	}
-
-	[am-wrapSlideContent~="3"] {
-
-	}
-
-	[am-wrapSlideContent~="4"] {
-
-	}
-
 	[am-layoutWrapDesktop] {
 		width:940px;
 		margin:0 auto;
