@@ -149,7 +149,7 @@ a {
 	border:0;
 	border-left:1px solid black;
 	outline: none;
-	cursor:pointer;	
+	cursor:pointer;
 }
 
 /*Search text and button*/
@@ -185,7 +185,7 @@ a {
 	background: Transparent;
 }
 
-[am-login] {	
+[am-login] {
 	color:#585951;
 	text-decoration: none;
 }
@@ -216,13 +216,13 @@ a {
 	border-radius:3px;
 	padding:10px 20px;
 	width:150px;
-	cursor:pointer;	
+	cursor:pointer;
 	display:block;
 	font-size:0.8em;
 }
 
 [am-blueButton]:hover {
-	background: linear-gradient(to bottom, #40a2d5 0%, #289ad2 100%);
+	background: linear-gradient(to bottom, #40a2d5 0%, #289ad2 100%)!important;
 }
 
 [am-blueButton] span {
@@ -375,7 +375,7 @@ a {
 	margin: 0px;
 	border-bottom:1px dotted lightgrey;
 }
-	
+
 [am-timeDayMonth] p{
 	margin: 0 0 0 0;
 	line-height:1.2 em;
@@ -796,7 +796,6 @@ a {
 
 
 
-	
 
 
 
@@ -809,4 +808,5 @@ a {
 
 
 
-	
+
+
