@@ -151,6 +151,7 @@ section {
 	display:inline-block;
 	position: absolute;
 	margin-top:270px;
+	z-index: 7;
 }
 
 [am-sliderBullets] a {
@@ -386,8 +387,17 @@ DESKTOP STYLES
 
 @media all and (min-width: 1004px) {
 
+	[am-slider] {
+		height: 570px;
+	}
+
+	[am-layoutWrap~="slider"] {
+		height: 100%;
+	}
+
 	[am-wrapSlideContent] {
-		height: 500px;
+		height: 100%;
+		position: absolute;
 	}
 
 	[am-wrapSlideContent] {
