@@ -12,7 +12,6 @@ var getActivatedIndex = function(links) {
 };
 
 var displaySlide = function() {
-	var slider = document.querySelector('[am-layoutWrap~="slider"');
 	var slides = document.querySelectorAll('[am-wrapSlideContent]');
 	for (var i = 0; i < slides.length; i++) {
 		if (i === getActivatedIndex(links)) {
@@ -100,6 +99,7 @@ var mqLaunch = function(mq) {
 	    }, 5000);
 	}
 	else {
+		slider.style.left = '0%';
 		// The viewport is less than 1004px wide.
 		console.log('viewport 1004-');
 		var slides = document.querySelectorAll('[am-wrapSlideContent]');
