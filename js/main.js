@@ -36,44 +36,47 @@ var changeSlide = function(e) {
 };
 
 var hammertime = new Hammer(slider);
-hammertime.on('swiperight', function(ev) {
-    console.log(ev);
-    // If swipe right, getActivatedIndex and click() on the next bullet.
-    var active = getActivatedIndex(links);
-    console.log(active);
-    if (active < 3) {
-	    active = active + 1;
-	}
-	else {
-		active = 0;
-	}
-	links[active].click();
-});
-
-hammertime.on('swipeleft', function(ev) {
-    console.log(ev);
-    // If swipe left, getActivatedIndex and click() on the previous bullet.
-    var active = getActivatedIndex(links);
-    console.log(active);
-    if (active > 0) {
-	    active = active -1;
-	}
-	else {
-		active = 3;
-	}
-	links[active].click();
-});
 
 var mqLaunch = function(mq) {
 	if (mq.matches) {
 		/* the view port is at least 1004 pixels wide */
 		console.log('viewport 1004+');
 
+		hammertime.off('swiperight');
+		hammertime.off('swipeleft');
+
+		hammertime.on('swiperight', function(ev) {
+		    console.log(ev);
+		    // If swipe right, getActivatedIndex and click() on the next bullet.
+		    var active = getActivatedIndex(links);
+		    console.log(active);
+		    if (active < 3) {
+			    active = active + 1;
+			}
+			else {
+				active = 0;
+			}
+			links[active].click();
+		});
+
+		hammertime.on('swipeleft', function(ev) {
+		    console.log(ev);
+		    // If swipe left, getActivatedIndex and click() on the previous bullet.
+		    var active = getActivatedIndex(links);
+		    console.log(active);
+		    if (active > 0) {
+			    active = active -1;
+			}
+			else {
+				active = 3;
+			}
+			links[active].click();
+		});
+
 		for (var i = 0; i < links.length; i++) {
 			var link = links[i];
 			link.addEventListener('click', changeSlide);
 		}
-
 		displaySlide();
 	}
 	else {
@@ -83,6 +86,8 @@ var mqLaunch = function(mq) {
 		for (var j = 0; j < slides.length; j++) {
 			slides[j].style.display = 'block';
 		}
+		hammertime.off('swiperight');
+		hammertime.off('swipeleft');
 	}
 };
 
