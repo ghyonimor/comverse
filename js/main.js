@@ -1,7 +1,7 @@
 var mq = window.matchMedia("(min-width: 1004px)");
 var links = document.querySelectorAll('[am-sliderBullets] a');
-
 var slider = document.querySelector('[am-layoutWrap~="slider"]');
+var timer;
 
 var getActivatedIndex = function(links) {
 	for (var i = 0; i < links.length; i++) {
@@ -33,6 +33,17 @@ var changeSlide = function(e) {
 		}
 	}
 	displaySlide();
+	clearInterval(timer);
+	timer = setInterval(function(){
+    	active = getActivatedIndex(links);
+    	if (active < 3) {
+		    active = active + 1;
+		}
+		else {
+			active = 0;
+		}
+		links[active].click();
+    }, 5000);
 };
 
 var hammertime = new Hammer(slider);
@@ -78,6 +89,17 @@ var mqLaunch = function(mq) {
 			link.addEventListener('click', changeSlide);
 		}
 		displaySlide();
+		var active;
+	    timer = setInterval(function(){
+	    	active = getActivatedIndex(links);
+	    	if (active < 3) {
+			    active = active + 1;
+			}
+			else {
+				active = 0;
+			}
+			links[active].click();
+	    }, 5000);
 	}
 	else {
 		// The viewport is less than 1004px wide.
@@ -88,6 +110,7 @@ var mqLaunch = function(mq) {
 		}
 		hammertime.off('swiperight');
 		hammertime.off('swipeleft');
+		clearInterval(timer);
 	}
 };
 
