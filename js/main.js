@@ -2,8 +2,38 @@ var mq = window.matchMedia("(min-width: 1004px)");
 
 var mqLaunch = function(mq) {
 	if (mq.matches) {
+
+		var links = document.querySelectorAll('[am-sliderBullets] a');
+
 	    /* the view port is at least 1004 pixels wide */
-	    var links = document.querySelectorAll('[am-sliderBullets] a');
+	    var slider = document.querySelector('[am-layoutWrap~="slider"]');
+	    var hammertime = new Hammer(slider);
+		hammertime.on('swiperight', function(ev) {
+		    console.log(ev);
+		    // If swipe right, getActivatedIndex and click() on the next bullet.
+		    var active = getActivatedIndex(links);
+		    if (active < 3) {
+			    active = active + 1;
+			}
+			else {
+				active = 0;
+			}
+			links[active].click();
+		});
+
+		hammertime.on('swipeleft', function(ev) {
+		    console.log(ev);
+		    // If swipe left, getActivatedIndex and click() on the previous bullet.
+		    var active = getActivatedIndex(links);
+		    if (active > 0) {
+			    active = active -1;
+			}
+			else {
+				active = 3;
+			}
+			links[active].click();
+		});
+
 		var getActivatedIndex = function(links) {
 			for (var i = 0; i < links.length; i++) {
 				if (links[i].hasAttribute('am-marked')) {
@@ -53,6 +83,9 @@ var mqLaunch = function(mq) {
 
 mq.addListener(mqLaunch);
 mqLaunch(mq);
+
+
+
 
 
 
