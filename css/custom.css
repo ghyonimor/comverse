@@ -203,7 +203,7 @@ section {
 [am-services] {
 	background: url("../images/weDoBG.png") repeat scroll 0 0, radial-gradient(ellipse at center, #59bedb 0%,#3399cc 100%);
 	position:relative;
-	bottom:34px;
+	bottom:50px;
 	padding-bottom:30px;
 	z-index:5;
 }
@@ -427,6 +427,9 @@ DESKTOP STYLES
 		bottom: 20px;
 	}
 
+	[am-services] {
+		bottom: 34px;
+	}
 }
 
 /*================================================================
