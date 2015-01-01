@@ -203,7 +203,7 @@ section {
 [am-services] {
 	background: url("../images/weDoBG.png") repeat scroll 0 0, radial-gradient(ellipse at center, #59bedb 0%,#3399cc 100%);
 	position:relative;
-	bottom:50px;
+	bottom:34px;
 	padding-bottom:30px;
 	z-index:5;
 }
